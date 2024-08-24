@@ -11,6 +11,7 @@ namespace Gorra.api.Domain.Entities
             CanReadMap = canReadMap;
             CitizenLat = citizenLat;
             CitizenLong = citizenLong;
+            DeclaredThefts = new HashSet<Theft>();
         }
 
         public Guid CitizenId { get; set; }
@@ -23,6 +24,6 @@ namespace Gorra.api.Domain.Entities
 
         public bool CanReadMap { get; set; }
 
-        public virtual ICollection<Theft> DeclaredAccidents { get; set; }
+        public virtual ICollection<Theft> DeclaredThefts { get; set; }
     }
 }
