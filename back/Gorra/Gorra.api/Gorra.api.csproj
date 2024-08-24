@@ -30,9 +30,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\UseCases\CitizenUseCases\" />
-    <Folder Include="Application\UseCases\TheftUseCases\" />
-    <Folder Include="Routes\EndPoints\" />
+    <Folder Include="Application\UseCases\CitizenUseCases\CreateCitizen\" />
+    <Folder Include="Application\UseCases\CitizenUseCases\DeleteCitizen\" />
+    <Folder Include="Application\UseCases\CitizenUseCases\UpdateCitizen\" />
+    <Folder Include="Application\UseCases\TheftUseCases\CreateTheft\" />
+    <Folder Include="Application\UseCases\TheftUseCases\DeleteTheft\" />
+    <Folder Include="Application\UseCases\TheftUseCases\GetAllTheft\" />
+    <Folder Include="Application\UseCases\TheftUseCases\GetTheftById\" />
+    <Folder Include="Application\UseCases\TheftUseCases\UpdateTheft\" />
   </ItemGroup>
 
 </Project>
