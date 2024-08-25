@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import PruebaGeoRef from './component/PruebaGeoRef';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <PruebaGeoRef/>
       </header>
     </div>
   );
