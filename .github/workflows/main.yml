@@ -19,7 +19,7 @@ jobs:
       - name: Log in to Amazon ECR
         uses: aws-actions/amazon-ecr-login@v1
         with:
-          region: ${{ secret.AWS_REGION }}
+          region: ${{ secrets.AWS_REGION }}
 
       - name: Build Docker image gorra
         run: docker build -t gorra . 
