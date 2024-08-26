@@ -1,0 +1,35 @@
+name: Build and Deploy Docker Image
+
+on:
+  push:
+    branches:
+      - main #Trigger workflor on push to main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v1
+        with:
+          region: ${{ secret.AWS_REGION }}
+
+      - name: Build Docker image gorra
+        run: docker build -t gorra . 
+
+      - name: Save Docker image to file
+        run: docker save gorra | gzip > gorra.tar.gz #definir nombre de app
+
+      - name: Upload Docker image to S3
+        env: 
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: aws s3 cp gorra.tar.gz s3://gorra_bucket_app/ #definir nombre de app y de bucket
