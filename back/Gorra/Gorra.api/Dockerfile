@@ -15,7 +15,8 @@ COPY ["./Gorra.api.csproj", "Gorra.api/"]
 RUN dotnet restore "./Gorra.api/Gorra.api.csproj"
 COPY . .
 WORKDIR "/src/Gorra.api"
-RUN dotnet build "./Gorra.api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet restore "./Gorra.api.csproj"
+RUN dotnet build "./Gorra.api.csproj" -c $BUILD_CONFIGURATION -o /app/build --verbosity detailed
 
 # Esta fase se usa para publicar el proyecto de servicio que se copiará en la fase final.
 FROM build AS publish
