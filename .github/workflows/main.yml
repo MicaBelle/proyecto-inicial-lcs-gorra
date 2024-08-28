@@ -23,15 +23,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
 
-      - name: Build Docker image gorra
-        run: docker build -t gorra . 
-
-      - name: Save Docker image to file
-        run: docker save gorra | gzip > gorra.tar.gz #definir nombre de app
-
-      - name: Upload Docker image to S3
-        env: 
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-        run: aws s3 cp gorra.tar.gz s3://gorra_bucket_app/ #definir nombre de app y de bucket
+      - name: Build and Push Backend Docker image gorra
+        run: |
+          docker build -t backend-app ./back/Gorra/Gorra.api
+          docker tag backend-app:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
+          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
