@@ -136,3 +136,6 @@ C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inici
 C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.api\obj\Debug\net8.0\Gorra.api.pdb
 C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.api\obj\Debug\net8.0\Gorra.api.genruntimeconfig.cache
 C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.api\obj\Debug\net8.0\ref\Gorra.api.dll
+C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.api\bin\Debug\net8.0\MediatR.dll
+C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.api\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.api\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
