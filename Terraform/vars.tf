@@ -9,8 +9,8 @@ variable "ZONE1" {
 variable "AMIS" {
   type = map(string)
   default = {
-    us-east-2 = "ami-ami-0e1a3a59369c81682"
-    us-east-1 = "ami-066784287e358dad1"
+    us-east-2 = "ami-085f9c64a9b75eed5 (64-bit (x86))"
+    us-east-1 = "ami-0e86e20dae9224db8 (64-bit (x86))"
   }
 }
 
@@ -36,4 +36,10 @@ variable "vpc_id" {
   description = "The ID of the VPC where resources will be created"
   type        = string
   default     = "aws_vpc.gorra_vpc.id"
+}
+
+variable "AWS_ACCOUNT_ID" {
+  description = "AWS account ID"
+  type = string
+  default = "778425189746"
 }

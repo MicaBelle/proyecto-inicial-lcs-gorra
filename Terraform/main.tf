@@ -45,31 +45,6 @@ resource "aws_route_table_association" "gorra_route_table_assoc" {
   route_table_id = aws_route_table.gorra_route_table.id
 }
 
-##CREACION DEL BUCKET##
-
-resource "aws_s3_bucket" "gorra_bucket" {
-  bucket = var.bucket_name
-
-  tags = {
-    Name = "gorra_bucket"
-  }
-}
-
-resource "aws_s3_bucket_policy" "gorra_bucket_policy" {
-  bucket = aws_s3_bucket.gorra_bucket.id
-  policy = jsonencode({
-        Version = "2012-10-17"
-        Statement = [
-            {
-                Action = "s3:GetObject"
-                Effect = "Allow"
-                Resource = "${aws_s3_bucket.gorra_bucket.arn}/*"
-                Principal = "*"
-            }
-        ]
-    })
-}
-
 ##CREACION Y CONFIGURACION DE SG##
 
 resource "aws_security_group" "gorra_sg" {
@@ -117,7 +92,7 @@ resource "aws_security_group" "gorra_sg" {
 
 ## CREACION DE LA EC2##
 
-resource "aws_instance" "gorra_test" {
+resource "aws_instance" "gorra_frontend" {
   ami                    = var.AMIS[var.REGION]
   instance_type          = "t2.micro"
   availability_zone      = var.ZONE1
@@ -126,7 +101,74 @@ resource "aws_instance" "gorra_test" {
   subnet_id              = aws_subnet.gorra_public_subnet.id
 
   tags = {
-    Name    = "gorra_test"
+    Name    = "gorra_frontend"
+    Project = "GORRA"
+  }
+}
+
+##CREAMOS UN ROL PARA LA EC2 DONDE PUEDA VER EL ECR##
+resource "aws_iam_role" "ec2_role" { 
+  name = "ec2-role"
+ 
+ assume_role_policy = << EOF
+# Create IAM Role for EC2 Instance
+resource "aws_iam_role" "ec2_role" {
+  name = "ec2-role"
+
+  assume_role_policy = <<EOF
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": {
+          "Service": "ec2.amazonaws.com"
+        },
+        "Action": "sts:AssumeRole"
+      }
+    ]
+  }
+  EOF
+}
+
+# Attach Policy to IAM Role to Allow Access to ECR
+resource "aws_iam_role_policy_attachment" "ecr_access" {
+  role       = aws_iam_role.ec2_role.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+}
+
+# Create IAM Instance Profile
+resource "aws_iam_instance_profile" "ec2_profile" {
+  name = "ec2-instance-profile"
+  role = aws_iam_role.ec2_role.name
+}
+
+}
+
+##CREAMOS LA EC2##
+
+resource "aws_instance" "gorra_backend" {
+  ami                    = var.AMIS[var.REGION]
+  instance_type          = "t2.micro"
+  availability_zone      = var.ZONE1
+  key_name               = var.key_name
+  vpc_security_group_ids = [aws_security_group.gorra_sg.id]
+  subnet_id              = aws_subnet.gorra_public_subnet.id
+  
+  user_data = <<-EOF
+                #!/bin/bash
+                yum update -y
+                yum install -y docker
+                service docker start
+                usermod -aG docker ec2-user
+                aws ecr get-login-password --region ${var.REGION} | docker login --username AWS --password-stdin ${var.AWS_ACCOUNT_ID}.dkr.ecr.${var.REGION}.amazonaws.com
+                docker pull ${var.AWS_ACCOUNT_ID}.dkr.ecr.${var.REGION}.amazonaws.com/backend-repo:latest
+                docker run -d -p 8080:8080 ${var.AWS_ACCOUNT_ID}.dkr.ecr.${var.REGION}.amazonaws.com/backend-repo:latest
+              EOF
+  
+
+  tags = {
+    Name    = "gorra_backend"
     Project = "GORRA"
   }
 }
