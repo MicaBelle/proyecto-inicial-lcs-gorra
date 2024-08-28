@@ -25,5 +25,15 @@
     <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\Francisco-pc\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.21.0</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Francisco-pc\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Francisco-pc\.nuget\packages\microsoft.entityframeworkcore.tools\8.0.8</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.core\3.7.400.11</PkgAWSSDK_Core>
+    <PkgAWSSDK_SecurityToken Condition=" '$(PkgAWSSDK_SecurityToken)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.securitytoken\3.7.400.11</PkgAWSSDK_SecurityToken>
+    <PkgAWSSDK_S3 Condition=" '$(PkgAWSSDK_S3)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.s3\3.7.402.2</PkgAWSSDK_S3>
+    <PkgAWSSDK_Route53 Condition=" '$(PkgAWSSDK_Route53)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.route53\3.7.402</PkgAWSSDK_Route53>
+    <PkgAWSSDK_KeyManagementService Condition=" '$(PkgAWSSDK_KeyManagementService)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.keymanagementservice\3.7.400.11</PkgAWSSDK_KeyManagementService>
+    <PkgAWSSDK_ECS Condition=" '$(PkgAWSSDK_ECS)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.ecs\3.7.402.5</PkgAWSSDK_ECS>
+    <PkgAWSSDK_ECR Condition=" '$(PkgAWSSDK_ECR)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.ecr\3.7.402.8</PkgAWSSDK_ECR>
+    <PkgAWSSDK_EC2 Condition=" '$(PkgAWSSDK_EC2)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.ec2\3.7.404.1</PkgAWSSDK_EC2>
+    <PkgAWSSDK_CloudWatchLogs Condition=" '$(PkgAWSSDK_CloudWatchLogs)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.cloudwatchlogs\3.7.305.15</PkgAWSSDK_CloudWatchLogs>
+    <PkgAWSSDK_AppConfig Condition=" '$(PkgAWSSDK_AppConfig)' == '' ">C:\Users\Francisco-pc\.nuget\packages\awssdk.appconfig\3.7.400.11</PkgAWSSDK_AppConfig>
   </PropertyGroup>
 </Project>

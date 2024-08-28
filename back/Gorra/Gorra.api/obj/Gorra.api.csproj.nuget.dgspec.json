@@ -50,6 +50,54 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AWS.Logger.AspNetCore": {
+              "target": "Package",
+              "version": "[3.5.3, )"
+            },
+            "AWSSDK.AppConfig": {
+              "target": "Package",
+              "version": "[3.7.400.11, )"
+            },
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.400.11, )"
+            },
+            "AWSSDK.EC2": {
+              "target": "Package",
+              "version": "[3.7.404.1, )"
+            },
+            "AWSSDK.ECR": {
+              "target": "Package",
+              "version": "[3.7.402.8, )"
+            },
+            "AWSSDK.ECS": {
+              "target": "Package",
+              "version": "[3.7.402.5, )"
+            },
+            "AWSSDK.KeyManagementService": {
+              "target": "Package",
+              "version": "[3.7.400.11, )"
+            },
+            "AWSSDK.Route53": {
+              "target": "Package",
+              "version": "[3.7.402, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.402.2, )"
+            },
+            "AWSSDK.SecurityToken": {
+              "target": "Package",
+              "version": "[3.7.400.11, )"
+            },
+            "AWSXRayRecorder.Handlers.AspNetCore": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "AWSXRayRecorder.Handlers.System.Net": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
