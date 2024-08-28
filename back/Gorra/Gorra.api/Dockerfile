@@ -11,7 +11,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["./Gorra.api/Gorra.api.csproj", "Gorra.api/"]
+COPY ["back/Gorra/Gorra.api/Gorra.api.csproj", "Gorra.api/"]
 RUN dotnet restore "./Gorra.api/Gorra.api.csproj"
 COPY . .
 WORKDIR "/src/Gorra.api"
