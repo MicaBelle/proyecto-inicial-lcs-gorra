@@ -25,6 +25,6 @@ jobs:
 
       - name: Build and Push Backend Docker image gorra
         run: |
-        docker build -t backend-app ./backend
-        docker tag backend-app:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
-        docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
+          docker build -t backend-app ./backend
+          docker tag backend-app:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
+          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
