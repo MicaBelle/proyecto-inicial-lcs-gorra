@@ -8,6 +8,18 @@
     ".NETCoreApp,Version=v8.0": {
       "Gorra.api/1.0.0": {
         "dependencies": {
+          "AWS.Logger.AspNetCore": "3.5.3",
+          "AWSSDK.AppConfig": "3.7.400.11",
+          "AWSSDK.Core": "3.7.400.11",
+          "AWSSDK.EC2": "3.7.404.1",
+          "AWSSDK.ECR": "3.7.402.8",
+          "AWSSDK.ECS": "3.7.402.5",
+          "AWSSDK.KeyManagementService": "3.7.400.11",
+          "AWSSDK.Route53": "3.7.402",
+          "AWSSDK.S3": "3.7.402.2",
+          "AWSSDK.SecurityToken": "3.7.400.11",
+          "AWSXRayRecorder.Handlers.AspNetCore": "2.12.0",
+          "AWSXRayRecorder.Handlers.System.Net": "2.12.0",
           "MediatR": "12.4.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.8",
@@ -25,6 +37,180 @@
         },
         "runtime": {
           "Gorra.api.dll": {}
+        }
+      },
+      "Amazon.Lambda.SQSEvents/2.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AWS.Logger.AspNetCore/3.5.3": {
+        "dependencies": {
+          "AWS.Logger.Core": "3.3.3",
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWS.Logger.AspNetCore.dll": {
+            "assemblyVersion": "3.5.3.0",
+            "fileVersion": "3.5.3.0"
+          }
+        }
+      },
+      "AWS.Logger.Core/3.3.3": {
+        "dependencies": {
+          "AWSSDK.CloudWatchLogs": "3.7.305.15"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWS.Logger.Core.dll": {
+            "assemblyVersion": "3.3.3.0",
+            "fileVersion": "3.3.3.0"
+          }
+        }
+      },
+      "AWSSDK.AppConfig/3.7.400.11": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.AppConfig.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.11"
+          }
+        }
+      },
+      "AWSSDK.CloudWatchLogs/3.7.305.15": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.CloudWatchLogs.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.305.15"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.400.11": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.11"
+          }
+        }
+      },
+      "AWSSDK.EC2/3.7.404.1": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.EC2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.404.1"
+          }
+        }
+      },
+      "AWSSDK.ECR/3.7.402.8": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.ECR.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.402.8"
+          }
+        }
+      },
+      "AWSSDK.ECS/3.7.402.5": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.ECS.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.402.5"
+          }
+        }
+      },
+      "AWSSDK.KeyManagementService/3.7.400.11": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.KeyManagementService.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.11"
+          }
+        }
+      },
+      "AWSSDK.Route53/3.7.402": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.Route53.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.402.0"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.402.2": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.402.2"
+          }
+        }
+      },
+      "AWSSDK.SecurityToken/3.7.400.11": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.SecurityToken.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.11"
+          }
+        }
+      },
+      "AWSXRayRecorder.Core/2.15.0": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.11",
+          "Amazon.Lambda.SQSEvents": "2.1.0"
+        },
+        "runtime": {
+          "lib/net6.0/AWSXRayRecorder.Core.dll": {
+            "assemblyVersion": "2.15.0.0",
+            "fileVersion": "2.15.0.0"
+          }
+        }
+      },
+      "AWSXRayRecorder.Handlers.AspNetCore/2.12.0": {
+        "dependencies": {
+          "AWSXRayRecorder.Core": "2.15.0"
+        },
+        "runtime": {
+          "lib/net6.0/AWSXRayRecorder.Handlers.AspNetCore.dll": {
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
+          }
+        }
+      },
+      "AWSXRayRecorder.Handlers.System.Net/2.12.0": {
+        "dependencies": {
+          "AWSXRayRecorder.Core": "2.15.0"
+        },
+        "runtime": {
+          "lib/net6.0/AWSXRayRecorder.Handlers.System.Net.dll": {
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
+          }
         }
       },
       "Azure.Core/1.35.0": {
@@ -1001,6 +1187,118 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Amazon.Lambda.SQSEvents/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a1xaCIuXDleJ8iRE3vHWWhtPqUiURmoQUS68INMEQmtfHr4wTz837TQZONo4cyubv5sZj78DDrYessZEzgFRGQ==",
+      "path": "amazon.lambda.sqsevents/2.1.0",
+      "hashPath": "amazon.lambda.sqsevents.2.1.0.nupkg.sha512"
+    },
+    "AWS.Logger.AspNetCore/3.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rCMUHIdehxqcqUcwTNPpg298itn/ZRJrzyBffq6InRom1x5Hf2zw3kIK5SRx0B+Ve5kMGGRf1mYoWbQIHHcwvg==",
+      "path": "aws.logger.aspnetcore/3.5.3",
+      "hashPath": "aws.logger.aspnetcore.3.5.3.nupkg.sha512"
+    },
+    "AWS.Logger.Core/3.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JEXjiwIwAws5YJZDVwSqUoZIjMxsAuaZOQFZfLk6lYTg9NLrFY1dHafy6qifz/8ZQSlBiuSs+MAAHlBqHF9Cfw==",
+      "path": "aws.logger.core/3.3.3",
+      "hashPath": "aws.logger.core.3.3.3.nupkg.sha512"
+    },
+    "AWSSDK.AppConfig/3.7.400.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0TissvI7cagVFER2XjuJJQWjc+sXm1q7Ii07eHdbiSjNEroOIRZ6WhWUD+aFO1s7xAEzRRUHA6n2XBanyTJ1Ng==",
+      "path": "awssdk.appconfig/3.7.400.11",
+      "hashPath": "awssdk.appconfig.3.7.400.11.nupkg.sha512"
+    },
+    "AWSSDK.CloudWatchLogs/3.7.305.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-03WeLYddEIWnZEmfY4r1D9+tUYnpizF49Tnit0gyXP4vO8dlOIpE/FLaAF1JCbsQ0Rnh/QUV0d1o3YXXCFFsMw==",
+      "path": "awssdk.cloudwatchlogs/3.7.305.15",
+      "hashPath": "awssdk.cloudwatchlogs.3.7.305.15.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.400.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bRntRauoB4FwswqaeEiUAcwjZd0AOeHjZCoFPvOMNaT9tJVWRvF0SHTPE1A5zR2MLeFHCZjbLJxJYOIgVJiCXA==",
+      "path": "awssdk.core/3.7.400.11",
+      "hashPath": "awssdk.core.3.7.400.11.nupkg.sha512"
+    },
+    "AWSSDK.EC2/3.7.404.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W2bnzlnjZwGoN5OApM8BN2e6kE2A10kaaH7SoRng9jBya7SWIe/y8HQ51noRT2wJfuv/6XHjZRuDkCudfiWw7Q==",
+      "path": "awssdk.ec2/3.7.404.1",
+      "hashPath": "awssdk.ec2.3.7.404.1.nupkg.sha512"
+    },
+    "AWSSDK.ECR/3.7.402.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xuMfc/pfEYupO8Mr+OCO9hDrufQX5bThhu4lUzmM2K11eTursLkdq+papVVJQh+2ReDZkDGNYuU6n9KGPaKDCQ==",
+      "path": "awssdk.ecr/3.7.402.8",
+      "hashPath": "awssdk.ecr.3.7.402.8.nupkg.sha512"
+    },
+    "AWSSDK.ECS/3.7.402.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nLhzjgKX7eUNbuNv0gNur6/KSOX5M50enU1E7V/o9U976bAshWahHraEYO5PfZ5wFojj0QESycp93MJg0OWZJA==",
+      "path": "awssdk.ecs/3.7.402.5",
+      "hashPath": "awssdk.ecs.3.7.402.5.nupkg.sha512"
+    },
+    "AWSSDK.KeyManagementService/3.7.400.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2sLKzuIh0yE+MiZX9bLLJczIs73jLh6JFrs78e0ZgwSgGVlQIQ3kfkafyC8sXvacdw7YRreDzRAtahflslmOag==",
+      "path": "awssdk.keymanagementservice/3.7.400.11",
+      "hashPath": "awssdk.keymanagementservice.3.7.400.11.nupkg.sha512"
+    },
+    "AWSSDK.Route53/3.7.402": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/hdHDDGBkEiq0YqLS1iidPoKD/8WDaIMZbj4nLh2EFSM9eE63kdJnlXu5D1cJ8QqZCbeY6NynVVjvDu3ogD6fg==",
+      "path": "awssdk.route53/3.7.402",
+      "hashPath": "awssdk.route53.3.7.402.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.402.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KCrbnIvPNqSCcEyvcVwXUJuVO6mCQf67FykLUA6qrf8rlYQsDk1oj/QhZW5PHTqTVFvOuHlT2bPkqLGQt/Ag7w==",
+      "path": "awssdk.s3/3.7.402.2",
+      "hashPath": "awssdk.s3.3.7.402.2.nupkg.sha512"
+    },
+    "AWSSDK.SecurityToken/3.7.400.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ErOLrmyAU3eDs2dfwyjH30QOBYEIibbu3YMyXjuI/AxPm5ZP73Ym30IIEYXZ5hESKm3cJ1Rh9kjR+psa8C9x3Q==",
+      "path": "awssdk.securitytoken/3.7.400.11",
+      "hashPath": "awssdk.securitytoken.3.7.400.11.nupkg.sha512"
+    },
+    "AWSXRayRecorder.Core/2.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-umkJQW57XjLMHnLIOzTAGVHehiPVqAguMnrH45m/ndcOIrOkoUThYf8P1+Iv6Ckb18pmWXSUoF7PqgKmTXkejQ==",
+      "path": "awsxrayrecorder.core/2.15.0",
+      "hashPath": "awsxrayrecorder.core.2.15.0.nupkg.sha512"
+    },
+    "AWSXRayRecorder.Handlers.AspNetCore/2.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ex2zM4NPof+XXj9SkwLX0dbkzSrqjOMzog33x+FSEWM47EOunLDFZ3P8iJD6UYf8D8370Bq0i7p6AnrPot4eBQ==",
+      "path": "awsxrayrecorder.handlers.aspnetcore/2.12.0",
+      "hashPath": "awsxrayrecorder.handlers.aspnetcore.2.12.0.nupkg.sha512"
+    },
+    "AWSXRayRecorder.Handlers.System.Net/2.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KSeE8WZVUNW7X05eZQ9kPlErjJutDJ/0BZTIp1nNdkSsJX3vmFdFqm3KQhEtbVZ/HCrnit8lyhijiJ5YqrgHqA==",
+      "path": "awsxrayrecorder.handlers.system.net/2.12.0",
+      "hashPath": "awsxrayrecorder.handlers.system.net.2.12.0.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",
