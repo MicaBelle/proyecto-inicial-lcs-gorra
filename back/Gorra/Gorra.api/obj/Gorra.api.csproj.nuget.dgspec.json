@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj": {}
+    "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj": {
+    "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
+        "projectUniqueName": "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
         "projectName": "Gorra.api",
-        "projectPath": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
-        "packagesPath": "C:\\Users\\Francisco-pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\",
+        "projectPath": "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Francisco-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,54 +46,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "AWS.Logger.AspNetCore": {
-              "target": "Package",
-              "version": "[3.5.3, )"
-            },
-            "AWSSDK.AppConfig": {
-              "target": "Package",
-              "version": "[3.7.400.11, )"
-            },
-            "AWSSDK.Core": {
-              "target": "Package",
-              "version": "[3.7.400.11, )"
-            },
-            "AWSSDK.EC2": {
-              "target": "Package",
-              "version": "[3.7.404.1, )"
-            },
-            "AWSSDK.ECR": {
-              "target": "Package",
-              "version": "[3.7.402.8, )"
-            },
-            "AWSSDK.ECS": {
-              "target": "Package",
-              "version": "[3.7.402.5, )"
-            },
-            "AWSSDK.KeyManagementService": {
-              "target": "Package",
-              "version": "[3.7.400.11, )"
-            },
-            "AWSSDK.Route53": {
-              "target": "Package",
-              "version": "[3.7.402, )"
-            },
-            "AWSSDK.S3": {
-              "target": "Package",
-              "version": "[3.7.402.2, )"
-            },
-            "AWSSDK.SecurityToken": {
-              "target": "Package",
-              "version": "[3.7.400.11, )"
-            },
-            "AWSXRayRecorder.Handlers.AspNetCore": {
-              "target": "Package",
-              "version": "[2.12.0, )"
-            },
-            "AWSXRayRecorder.Handlers.System.Net": {
-              "target": "Package",
-              "version": "[2.12.0, )"
-            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
@@ -156,7 +104,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.7.3, )"
+              "version": "[6.7.1, )"
             }
           },
           "imports": [

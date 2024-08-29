@@ -2,263 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Amazon.Lambda.SQSEvents/2.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "AWS.Logger.AspNetCore/3.5.3": {
-        "type": "package",
-        "dependencies": {
-          "AWS.Logger.Core": "3.3.3",
-          "Microsoft.Extensions.Configuration": "2.1.0",
-          "Microsoft.Extensions.DependencyInjection": "2.1.0",
-          "Microsoft.Extensions.Logging": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/AWS.Logger.AspNetCore.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/AWS.Logger.AspNetCore.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWS.Logger.Core/3.3.3": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.CloudWatchLogs": "3.7.305.15"
-        },
-        "compile": {
-          "lib/netstandard2.0/AWS.Logger.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/AWS.Logger.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.AppConfig/3.7.400.11": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.AppConfig.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.AppConfig.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.CloudWatchLogs/3.7.305.15": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.303.14, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.CloudWatchLogs.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.CloudWatchLogs.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.Core/3.7.400.11": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/AWSSDK.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.EC2/3.7.404.1": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.EC2.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.EC2.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.ECR/3.7.402.8": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.ECR.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.ECR.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.ECS/3.7.402.5": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.ECS.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.ECS.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.KeyManagementService/3.7.400.11": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.KeyManagementService.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.KeyManagementService.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.Route53/3.7.402": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.Route53.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.Route53.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.S3/3.7.402.2": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.S3.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.S3.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.SecurityToken/3.7.400.11": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.7.400.11, 4.0.0)"
-        },
-        "compile": {
-          "lib/net8.0/AWSSDK.SecurityToken.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AWSSDK.SecurityToken.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSXRayRecorder.Core/2.15.0": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "3.3.25.1",
-          "Amazon.Lambda.SQSEvents": "2.1.0"
-        },
-        "compile": {
-          "lib/net6.0/AWSXRayRecorder.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/AWSXRayRecorder.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "AWSXRayRecorder.Handlers.AspNetCore/2.12.0": {
-        "type": "package",
-        "dependencies": {
-          "AWSXRayRecorder.Core": "2.15.0"
-        },
-        "compile": {
-          "lib/net6.0/AWSXRayRecorder.Handlers.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/AWSXRayRecorder.Handlers.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "AWSXRayRecorder.Handlers.System.Net/2.12.0": {
-        "type": "package",
-        "dependencies": {
-          "AWSXRayRecorder.Core": "2.15.0"
-        },
-        "compile": {
-          "lib/net6.0/AWSXRayRecorder.Handlers.System.Net.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/AWSXRayRecorder.Handlers.System.Net.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1352,19 +1095,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore/6.7.3": {
+      "Swashbuckle.AspNetCore/6.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-          "Swashbuckle.AspNetCore.Swagger": "6.7.3",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.7.3",
-          "Swashbuckle.AspNetCore.SwaggerUI": "6.7.3"
+          "Swashbuckle.AspNetCore.Swagger": "6.7.1",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.7.1",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.7.1"
         },
         "build": {
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.7.3": {
+      "Swashbuckle.AspNetCore.Swagger/6.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.6.14"
@@ -1383,10 +1126,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/6.7.3": {
+      "Swashbuckle.AspNetCore.SwaggerGen/6.7.1": {
         "type": "package",
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "6.7.3"
+          "Swashbuckle.AspNetCore.Swagger": "6.7.1"
         },
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
@@ -1399,7 +1142,7 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/6.7.3": {
+      "Swashbuckle.AspNetCore.SwaggerUI/6.7.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
@@ -2028,432 +1771,6 @@
     }
   },
   "libraries": {
-    "Amazon.Lambda.SQSEvents/2.1.0": {
-      "sha512": "a1xaCIuXDleJ8iRE3vHWWhtPqUiURmoQUS68INMEQmtfHr4wTz837TQZONo4cyubv5sZj78DDrYessZEzgFRGQ==",
-      "type": "package",
-      "path": "amazon.lambda.sqsevents/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "amazon.lambda.sqsevents.2.1.0.nupkg.sha512",
-        "amazon.lambda.sqsevents.nuspec",
-        "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll",
-        "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.xml",
-        "lib/netstandard2.0/Amazon.Lambda.SQSEvents.dll",
-        "lib/netstandard2.0/Amazon.Lambda.SQSEvents.xml"
-      ]
-    },
-    "AWS.Logger.AspNetCore/3.5.3": {
-      "sha512": "rCMUHIdehxqcqUcwTNPpg298itn/ZRJrzyBffq6InRom1x5Hf2zw3kIK5SRx0B+Ve5kMGGRf1mYoWbQIHHcwvg==",
-      "type": "package",
-      "path": "aws.logger.aspnetcore/3.5.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "aws.logger.aspnetcore.3.5.3.nupkg.sha512",
-        "aws.logger.aspnetcore.nuspec",
-        "icon.png",
-        "lib/netstandard2.0/AWS.Logger.AspNetCore.dll",
-        "lib/netstandard2.0/AWS.Logger.AspNetCore.pdb",
-        "lib/netstandard2.0/AWS.Logger.AspNetCore.xml"
-      ]
-    },
-    "AWS.Logger.Core/3.3.3": {
-      "sha512": "JEXjiwIwAws5YJZDVwSqUoZIjMxsAuaZOQFZfLk6lYTg9NLrFY1dHafy6qifz/8ZQSlBiuSs+MAAHlBqHF9Cfw==",
-      "type": "package",
-      "path": "aws.logger.core/3.3.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "aws.logger.core.3.3.3.nupkg.sha512",
-        "aws.logger.core.nuspec",
-        "icon.png",
-        "lib/net45/AWS.Logger.Core.dll",
-        "lib/net45/AWS.Logger.Core.pdb",
-        "lib/net45/AWS.Logger.Core.xml",
-        "lib/netstandard2.0/AWS.Logger.Core.dll",
-        "lib/netstandard2.0/AWS.Logger.Core.pdb",
-        "lib/netstandard2.0/AWS.Logger.Core.xml"
-      ]
-    },
-    "AWSSDK.AppConfig/3.7.400.11": {
-      "sha512": "0TissvI7cagVFER2XjuJJQWjc+sXm1q7Ii07eHdbiSjNEroOIRZ6WhWUD+aFO1s7xAEzRRUHA6n2XBanyTJ1Ng==",
-      "type": "package",
-      "path": "awssdk.appconfig/3.7.400.11",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.AppConfig.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.appconfig.3.7.400.11.nupkg.sha512",
-        "awssdk.appconfig.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.AppConfig.dll",
-        "lib/net35/AWSSDK.AppConfig.pdb",
-        "lib/net35/AWSSDK.AppConfig.xml",
-        "lib/net45/AWSSDK.AppConfig.dll",
-        "lib/net45/AWSSDK.AppConfig.pdb",
-        "lib/net45/AWSSDK.AppConfig.xml",
-        "lib/net8.0/AWSSDK.AppConfig.dll",
-        "lib/net8.0/AWSSDK.AppConfig.pdb",
-        "lib/net8.0/AWSSDK.AppConfig.xml",
-        "lib/netcoreapp3.1/AWSSDK.AppConfig.dll",
-        "lib/netcoreapp3.1/AWSSDK.AppConfig.pdb",
-        "lib/netcoreapp3.1/AWSSDK.AppConfig.xml",
-        "lib/netstandard2.0/AWSSDK.AppConfig.dll",
-        "lib/netstandard2.0/AWSSDK.AppConfig.pdb",
-        "lib/netstandard2.0/AWSSDK.AppConfig.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.CloudWatchLogs/3.7.305.15": {
-      "sha512": "03WeLYddEIWnZEmfY4r1D9+tUYnpizF49Tnit0gyXP4vO8dlOIpE/FLaAF1JCbsQ0Rnh/QUV0d1o3YXXCFFsMw==",
-      "type": "package",
-      "path": "awssdk.cloudwatchlogs/3.7.305.15",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.CloudWatchLogs.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.cloudwatchlogs.3.7.305.15.nupkg.sha512",
-        "awssdk.cloudwatchlogs.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.CloudWatchLogs.dll",
-        "lib/net35/AWSSDK.CloudWatchLogs.pdb",
-        "lib/net35/AWSSDK.CloudWatchLogs.xml",
-        "lib/net45/AWSSDK.CloudWatchLogs.dll",
-        "lib/net45/AWSSDK.CloudWatchLogs.pdb",
-        "lib/net45/AWSSDK.CloudWatchLogs.xml",
-        "lib/net8.0/AWSSDK.CloudWatchLogs.dll",
-        "lib/net8.0/AWSSDK.CloudWatchLogs.pdb",
-        "lib/net8.0/AWSSDK.CloudWatchLogs.xml",
-        "lib/netcoreapp3.1/AWSSDK.CloudWatchLogs.dll",
-        "lib/netcoreapp3.1/AWSSDK.CloudWatchLogs.pdb",
-        "lib/netcoreapp3.1/AWSSDK.CloudWatchLogs.xml",
-        "lib/netstandard2.0/AWSSDK.CloudWatchLogs.dll",
-        "lib/netstandard2.0/AWSSDK.CloudWatchLogs.pdb",
-        "lib/netstandard2.0/AWSSDK.CloudWatchLogs.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.Core/3.7.400.11": {
-      "sha512": "bRntRauoB4FwswqaeEiUAcwjZd0AOeHjZCoFPvOMNaT9tJVWRvF0SHTPE1A5zR2MLeFHCZjbLJxJYOIgVJiCXA==",
-      "type": "package",
-      "path": "awssdk.core/3.7.400.11",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "awssdk.core.3.7.400.11.nupkg.sha512",
-        "awssdk.core.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.Core.dll",
-        "lib/net35/AWSSDK.Core.pdb",
-        "lib/net35/AWSSDK.Core.xml",
-        "lib/net45/AWSSDK.Core.dll",
-        "lib/net45/AWSSDK.Core.pdb",
-        "lib/net45/AWSSDK.Core.xml",
-        "lib/net8.0/AWSSDK.Core.dll",
-        "lib/net8.0/AWSSDK.Core.pdb",
-        "lib/net8.0/AWSSDK.Core.xml",
-        "lib/netcoreapp3.1/AWSSDK.Core.dll",
-        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
-        "lib/netcoreapp3.1/AWSSDK.Core.xml",
-        "lib/netstandard2.0/AWSSDK.Core.dll",
-        "lib/netstandard2.0/AWSSDK.Core.pdb",
-        "lib/netstandard2.0/AWSSDK.Core.xml",
-        "tools/account-management.ps1"
-      ]
-    },
-    "AWSSDK.EC2/3.7.404.1": {
-      "sha512": "W2bnzlnjZwGoN5OApM8BN2e6kE2A10kaaH7SoRng9jBya7SWIe/y8HQ51noRT2wJfuv/6XHjZRuDkCudfiWw7Q==",
-      "type": "package",
-      "path": "awssdk.ec2/3.7.404.1",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.EC2.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.ec2.3.7.404.1.nupkg.sha512",
-        "awssdk.ec2.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.EC2.dll",
-        "lib/net35/AWSSDK.EC2.pdb",
-        "lib/net35/AWSSDK.EC2.xml",
-        "lib/net45/AWSSDK.EC2.dll",
-        "lib/net45/AWSSDK.EC2.pdb",
-        "lib/net45/AWSSDK.EC2.xml",
-        "lib/net8.0/AWSSDK.EC2.dll",
-        "lib/net8.0/AWSSDK.EC2.pdb",
-        "lib/net8.0/AWSSDK.EC2.xml",
-        "lib/netcoreapp3.1/AWSSDK.EC2.dll",
-        "lib/netcoreapp3.1/AWSSDK.EC2.pdb",
-        "lib/netcoreapp3.1/AWSSDK.EC2.xml",
-        "lib/netstandard2.0/AWSSDK.EC2.dll",
-        "lib/netstandard2.0/AWSSDK.EC2.pdb",
-        "lib/netstandard2.0/AWSSDK.EC2.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.ECR/3.7.402.8": {
-      "sha512": "xuMfc/pfEYupO8Mr+OCO9hDrufQX5bThhu4lUzmM2K11eTursLkdq+papVVJQh+2ReDZkDGNYuU6n9KGPaKDCQ==",
-      "type": "package",
-      "path": "awssdk.ecr/3.7.402.8",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.ECR.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.ecr.3.7.402.8.nupkg.sha512",
-        "awssdk.ecr.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.ECR.dll",
-        "lib/net35/AWSSDK.ECR.pdb",
-        "lib/net35/AWSSDK.ECR.xml",
-        "lib/net45/AWSSDK.ECR.dll",
-        "lib/net45/AWSSDK.ECR.pdb",
-        "lib/net45/AWSSDK.ECR.xml",
-        "lib/net8.0/AWSSDK.ECR.dll",
-        "lib/net8.0/AWSSDK.ECR.pdb",
-        "lib/net8.0/AWSSDK.ECR.xml",
-        "lib/netcoreapp3.1/AWSSDK.ECR.dll",
-        "lib/netcoreapp3.1/AWSSDK.ECR.pdb",
-        "lib/netcoreapp3.1/AWSSDK.ECR.xml",
-        "lib/netstandard2.0/AWSSDK.ECR.dll",
-        "lib/netstandard2.0/AWSSDK.ECR.pdb",
-        "lib/netstandard2.0/AWSSDK.ECR.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.ECS/3.7.402.5": {
-      "sha512": "nLhzjgKX7eUNbuNv0gNur6/KSOX5M50enU1E7V/o9U976bAshWahHraEYO5PfZ5wFojj0QESycp93MJg0OWZJA==",
-      "type": "package",
-      "path": "awssdk.ecs/3.7.402.5",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.ECS.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.ecs.3.7.402.5.nupkg.sha512",
-        "awssdk.ecs.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.ECS.dll",
-        "lib/net35/AWSSDK.ECS.pdb",
-        "lib/net35/AWSSDK.ECS.xml",
-        "lib/net45/AWSSDK.ECS.dll",
-        "lib/net45/AWSSDK.ECS.pdb",
-        "lib/net45/AWSSDK.ECS.xml",
-        "lib/net8.0/AWSSDK.ECS.dll",
-        "lib/net8.0/AWSSDK.ECS.pdb",
-        "lib/net8.0/AWSSDK.ECS.xml",
-        "lib/netcoreapp3.1/AWSSDK.ECS.dll",
-        "lib/netcoreapp3.1/AWSSDK.ECS.pdb",
-        "lib/netcoreapp3.1/AWSSDK.ECS.xml",
-        "lib/netstandard2.0/AWSSDK.ECS.dll",
-        "lib/netstandard2.0/AWSSDK.ECS.pdb",
-        "lib/netstandard2.0/AWSSDK.ECS.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.KeyManagementService/3.7.400.11": {
-      "sha512": "2sLKzuIh0yE+MiZX9bLLJczIs73jLh6JFrs78e0ZgwSgGVlQIQ3kfkafyC8sXvacdw7YRreDzRAtahflslmOag==",
-      "type": "package",
-      "path": "awssdk.keymanagementservice/3.7.400.11",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.KeyManagementService.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.keymanagementservice.3.7.400.11.nupkg.sha512",
-        "awssdk.keymanagementservice.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.KeyManagementService.dll",
-        "lib/net35/AWSSDK.KeyManagementService.pdb",
-        "lib/net35/AWSSDK.KeyManagementService.xml",
-        "lib/net45/AWSSDK.KeyManagementService.dll",
-        "lib/net45/AWSSDK.KeyManagementService.pdb",
-        "lib/net45/AWSSDK.KeyManagementService.xml",
-        "lib/net8.0/AWSSDK.KeyManagementService.dll",
-        "lib/net8.0/AWSSDK.KeyManagementService.pdb",
-        "lib/net8.0/AWSSDK.KeyManagementService.xml",
-        "lib/netcoreapp3.1/AWSSDK.KeyManagementService.dll",
-        "lib/netcoreapp3.1/AWSSDK.KeyManagementService.pdb",
-        "lib/netcoreapp3.1/AWSSDK.KeyManagementService.xml",
-        "lib/netstandard2.0/AWSSDK.KeyManagementService.dll",
-        "lib/netstandard2.0/AWSSDK.KeyManagementService.pdb",
-        "lib/netstandard2.0/AWSSDK.KeyManagementService.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.Route53/3.7.402": {
-      "sha512": "/hdHDDGBkEiq0YqLS1iidPoKD/8WDaIMZbj4nLh2EFSM9eE63kdJnlXu5D1cJ8QqZCbeY6NynVVjvDu3ogD6fg==",
-      "type": "package",
-      "path": "awssdk.route53/3.7.402",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.Route53.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.route53.3.7.402.nupkg.sha512",
-        "awssdk.route53.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.Route53.dll",
-        "lib/net35/AWSSDK.Route53.pdb",
-        "lib/net35/AWSSDK.Route53.xml",
-        "lib/net45/AWSSDK.Route53.dll",
-        "lib/net45/AWSSDK.Route53.pdb",
-        "lib/net45/AWSSDK.Route53.xml",
-        "lib/net8.0/AWSSDK.Route53.dll",
-        "lib/net8.0/AWSSDK.Route53.pdb",
-        "lib/net8.0/AWSSDK.Route53.xml",
-        "lib/netcoreapp3.1/AWSSDK.Route53.dll",
-        "lib/netcoreapp3.1/AWSSDK.Route53.pdb",
-        "lib/netcoreapp3.1/AWSSDK.Route53.xml",
-        "lib/netstandard2.0/AWSSDK.Route53.dll",
-        "lib/netstandard2.0/AWSSDK.Route53.pdb",
-        "lib/netstandard2.0/AWSSDK.Route53.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.S3/3.7.402.2": {
-      "sha512": "KCrbnIvPNqSCcEyvcVwXUJuVO6mCQf67FykLUA6qrf8rlYQsDk1oj/QhZW5PHTqTVFvOuHlT2bPkqLGQt/Ag7w==",
-      "type": "package",
-      "path": "awssdk.s3/3.7.402.2",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.s3.3.7.402.2.nupkg.sha512",
-        "awssdk.s3.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.S3.dll",
-        "lib/net35/AWSSDK.S3.pdb",
-        "lib/net35/AWSSDK.S3.xml",
-        "lib/net45/AWSSDK.S3.dll",
-        "lib/net45/AWSSDK.S3.pdb",
-        "lib/net45/AWSSDK.S3.xml",
-        "lib/net8.0/AWSSDK.S3.dll",
-        "lib/net8.0/AWSSDK.S3.pdb",
-        "lib/net8.0/AWSSDK.S3.xml",
-        "lib/netcoreapp3.1/AWSSDK.S3.dll",
-        "lib/netcoreapp3.1/AWSSDK.S3.pdb",
-        "lib/netcoreapp3.1/AWSSDK.S3.xml",
-        "lib/netstandard2.0/AWSSDK.S3.dll",
-        "lib/netstandard2.0/AWSSDK.S3.pdb",
-        "lib/netstandard2.0/AWSSDK.S3.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSSDK.SecurityToken/3.7.400.11": {
-      "sha512": "ErOLrmyAU3eDs2dfwyjH30QOBYEIibbu3YMyXjuI/AxPm5ZP73Ym30IIEYXZ5hESKm3cJ1Rh9kjR+psa8C9x3Q==",
-      "type": "package",
-      "path": "awssdk.securitytoken/3.7.400.11",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.SecurityToken.CodeAnalysis.dll",
-        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.securitytoken.3.7.400.11.nupkg.sha512",
-        "awssdk.securitytoken.nuspec",
-        "images/AWSLogo.png",
-        "lib/net35/AWSSDK.SecurityToken.dll",
-        "lib/net35/AWSSDK.SecurityToken.pdb",
-        "lib/net35/AWSSDK.SecurityToken.xml",
-        "lib/net45/AWSSDK.SecurityToken.dll",
-        "lib/net45/AWSSDK.SecurityToken.pdb",
-        "lib/net45/AWSSDK.SecurityToken.xml",
-        "lib/net8.0/AWSSDK.SecurityToken.dll",
-        "lib/net8.0/AWSSDK.SecurityToken.pdb",
-        "lib/net8.0/AWSSDK.SecurityToken.xml",
-        "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll",
-        "lib/netcoreapp3.1/AWSSDK.SecurityToken.pdb",
-        "lib/netcoreapp3.1/AWSSDK.SecurityToken.xml",
-        "lib/netstandard2.0/AWSSDK.SecurityToken.dll",
-        "lib/netstandard2.0/AWSSDK.SecurityToken.pdb",
-        "lib/netstandard2.0/AWSSDK.SecurityToken.xml",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "AWSXRayRecorder.Core/2.15.0": {
-      "sha512": "umkJQW57XjLMHnLIOzTAGVHehiPVqAguMnrH45m/ndcOIrOkoUThYf8P1+Iv6Ckb18pmWXSUoF7PqgKmTXkejQ==",
-      "type": "package",
-      "path": "awsxrayrecorder.core/2.15.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "awsxrayrecorder.core.2.15.0.nupkg.sha512",
-        "awsxrayrecorder.core.nuspec",
-        "lib/net45/AWSXRayRecorder.Core.dll",
-        "lib/net45/AWSXRayRecorder.Core.xml",
-        "lib/net462/AWSXRayRecorder.Core.dll",
-        "lib/net462/AWSXRayRecorder.Core.xml",
-        "lib/net6.0/AWSXRayRecorder.Core.dll",
-        "lib/net6.0/AWSXRayRecorder.Core.xml",
-        "lib/netcoreapp3.1/AWSXRayRecorder.Core.dll",
-        "lib/netcoreapp3.1/AWSXRayRecorder.Core.xml",
-        "lib/netstandard2.0/AWSXRayRecorder.Core.dll",
-        "lib/netstandard2.0/AWSXRayRecorder.Core.xml"
-      ]
-    },
-    "AWSXRayRecorder.Handlers.AspNetCore/2.12.0": {
-      "sha512": "Ex2zM4NPof+XXj9SkwLX0dbkzSrqjOMzog33x+FSEWM47EOunLDFZ3P8iJD6UYf8D8370Bq0i7p6AnrPot4eBQ==",
-      "type": "package",
-      "path": "awsxrayrecorder.handlers.aspnetcore/2.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "awsxrayrecorder.handlers.aspnetcore.2.12.0.nupkg.sha512",
-        "awsxrayrecorder.handlers.aspnetcore.nuspec",
-        "lib/net6.0/AWSXRayRecorder.Handlers.AspNetCore.dll",
-        "lib/net6.0/AWSXRayRecorder.Handlers.AspNetCore.xml",
-        "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.dll",
-        "lib/netcoreapp3.1/AWSXRayRecorder.Handlers.AspNetCore.xml",
-        "lib/netstandard2.0/AWSXRayRecorder.Handlers.AspNetCore.dll",
-        "lib/netstandard2.0/AWSXRayRecorder.Handlers.AspNetCore.xml"
-      ]
-    },
-    "AWSXRayRecorder.Handlers.System.Net/2.12.0": {
-      "sha512": "KSeE8WZVUNW7X05eZQ9kPlErjJutDJ/0BZTIp1nNdkSsJX3vmFdFqm3KQhEtbVZ/HCrnit8lyhijiJ5YqrgHqA==",
-      "type": "package",
-      "path": "awsxrayrecorder.handlers.system.net/2.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "awsxrayrecorder.handlers.system.net.2.12.0.nupkg.sha512",
-        "awsxrayrecorder.handlers.system.net.nuspec",
-        "lib/net45/AWSXRayRecorder.Handlers.System.Net.dll",
-        "lib/net45/AWSXRayRecorder.Handlers.System.Net.xml",
-        "lib/net462/AWSXRayRecorder.Handlers.System.Net.dll",
-        "lib/net462/AWSXRayRecorder.Handlers.System.Net.xml",
-        "lib/net6.0/AWSXRayRecorder.Handlers.System.Net.dll",
-        "lib/net6.0/AWSXRayRecorder.Handlers.System.Net.xml",
-        "lib/netstandard2.0/AWSXRayRecorder.Handlers.System.Net.dll",
-        "lib/netstandard2.0/AWSXRayRecorder.Handlers.System.Net.xml"
-      ]
-    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
@@ -4433,22 +3750,22 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore/6.7.3": {
-      "sha512": "PYTm/M5YrkEUHmguhj6vF1DshG2deKMMcsnhKet1BkcKzZHNX/VVQady0T/jNpXrtxhLR3vB10hWhONF1Nbglw==",
+    "Swashbuckle.AspNetCore/6.7.1": {
+      "sha512": "vLyorZI4TXvKlzC6uEMI9zXBe98wEBEu43wjpUayhqccFggryX94e+2iUjLtQFFDdDyx4f5xtF3afhRmOfQOdg==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore/6.7.3",
+      "path": "swashbuckle.aspnetcore/6.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Swashbuckle.AspNetCore.props",
-        "swashbuckle.aspnetcore.6.7.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.6.7.1.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/6.7.3": {
-      "sha512": "plNVrOpup/UCIP0aSE5cznIzXMC17EOOqIceWqhP829evEAUwTomCc+1TPy2xK2E+OilYcYEdUus3rOUMjjm/g==",
+    "Swashbuckle.AspNetCore.Swagger/6.7.1": {
+      "sha512": "+inGEUziCH4qoAOnWxLYX+4ZjBTAj+Y74acJ5akLcPgNzk/qGHwQvt6nZq8Bgb3XmhsxDNMCIACc7iMbuG/h9Q==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/6.7.3",
+      "path": "swashbuckle.aspnetcore.swagger/6.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4471,14 +3788,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swagger.6.7.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.6.7.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/6.7.3": {
-      "sha512": "kvjGd+g85YFZqyEQZSBUCPtEDDCZsiPPYcjgBN6si3C3oik2c9d7Zlq4PIm07pgY/QmBMgyFOVEzHbks6a398w==",
+    "Swashbuckle.AspNetCore.SwaggerGen/6.7.1": {
+      "sha512": "iMtGuSAtzpvnLaqiqvPy453XaweX6hkTTY0ZXUvpkRNk++7fOBAFXX3/39kJ4F79qoRAd5XX8MXXBd0oic7N5Q==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/6.7.3",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4501,14 +3818,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggergen.6.7.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.6.7.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/6.7.3": {
-      "sha512": "exXUT9h++OU70jTCfQALiHzeBthqL7c5IFQm+aa67Hi/6X945t32NtOMO16TaRn44xFXdqMZ2CyMbgnTmx+w2A==",
+    "Swashbuckle.AspNetCore.SwaggerUI/6.7.1": {
+      "sha512": "aJ/UfnrODbj/S3FDAnVQ7qz2txj7OcIXGu7ViXsi3bu3xMzhMcizVrH7T+utB2yWcPMBp0VMfc1nwRh77Ct1HQ==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/6.7.3",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4531,7 +3848,7 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggerui.6.7.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.6.7.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
@@ -5715,18 +5032,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AWS.Logger.AspNetCore >= 3.5.3",
-      "AWSSDK.AppConfig >= 3.7.400.11",
-      "AWSSDK.Core >= 3.7.400.11",
-      "AWSSDK.EC2 >= 3.7.404.1",
-      "AWSSDK.ECR >= 3.7.402.8",
-      "AWSSDK.ECS >= 3.7.402.5",
-      "AWSSDK.KeyManagementService >= 3.7.400.11",
-      "AWSSDK.Route53 >= 3.7.402",
-      "AWSSDK.S3 >= 3.7.402.2",
-      "AWSSDK.SecurityToken >= 3.7.400.11",
-      "AWSXRayRecorder.Handlers.AspNetCore >= 2.12.0",
-      "AWSXRayRecorder.Handlers.System.Net >= 2.12.0",
       "MediatR >= 12.4.0",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Abstractions >= 8.0.8",
@@ -5740,28 +5045,23 @@
       "Microsoft.Extensions.Http >= 8.0.0",
       "Microsoft.Net.Http.Headers >= 8.0.8",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
-      "Swashbuckle.AspNetCore >= 6.7.3"
+      "Swashbuckle.AspNetCore >= 6.7.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Francisco-pc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\tomas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
+      "projectUniqueName": "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
       "projectName": "Gorra.api",
-      "projectPath": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
-      "packagesPath": "C:\\Users\\Francisco-pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\",
+      "projectPath": "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\Gorra.api.csproj",
+      "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+      "outputPath": "D:\\progra10\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Francisco-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5793,54 +5093,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "AWS.Logger.AspNetCore": {
-            "target": "Package",
-            "version": "[3.5.3, )"
-          },
-          "AWSSDK.AppConfig": {
-            "target": "Package",
-            "version": "[3.7.400.11, )"
-          },
-          "AWSSDK.Core": {
-            "target": "Package",
-            "version": "[3.7.400.11, )"
-          },
-          "AWSSDK.EC2": {
-            "target": "Package",
-            "version": "[3.7.404.1, )"
-          },
-          "AWSSDK.ECR": {
-            "target": "Package",
-            "version": "[3.7.402.8, )"
-          },
-          "AWSSDK.ECS": {
-            "target": "Package",
-            "version": "[3.7.402.5, )"
-          },
-          "AWSSDK.KeyManagementService": {
-            "target": "Package",
-            "version": "[3.7.400.11, )"
-          },
-          "AWSSDK.Route53": {
-            "target": "Package",
-            "version": "[3.7.402, )"
-          },
-          "AWSSDK.S3": {
-            "target": "Package",
-            "version": "[3.7.402.2, )"
-          },
-          "AWSSDK.SecurityToken": {
-            "target": "Package",
-            "version": "[3.7.400.11, )"
-          },
-          "AWSXRayRecorder.Handlers.AspNetCore": {
-            "target": "Package",
-            "version": "[2.12.0, )"
-          },
-          "AWSXRayRecorder.Handlers.System.Net": {
-            "target": "Package",
-            "version": "[2.12.0, )"
-          },
           "MediatR": {
             "target": "Package",
             "version": "[12.4.0, )"
@@ -5899,7 +5151,7 @@
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[6.7.3, )"
+            "version": "[6.7.1, )"
           }
         },
         "imports": [
