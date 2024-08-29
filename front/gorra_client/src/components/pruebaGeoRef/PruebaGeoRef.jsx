@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { HttpMethods } from '../services/HttpMethods'
-import { executeFetch } from '../services/fetch'
+import { HttpMethods } from '../../services/HttpMethods'
+import { executeFetch } from '../../services/fetch'
 
 export default function PruebaGeoRef() {
     const printGeoRef = async() =>{

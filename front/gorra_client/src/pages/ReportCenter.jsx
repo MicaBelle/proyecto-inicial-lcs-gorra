@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaf
 import 'leaflet/dist/leaflet.css';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LocationMarker from '../components/LocationMarker';
+import LocationMarker from '../components/locationMarker/LocationMarker';
 
 export default function ReportCenter() {
   const [location, setLocation] = useState(null);

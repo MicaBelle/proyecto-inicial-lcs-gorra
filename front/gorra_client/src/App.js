@@ -1,10 +1,19 @@
+import BottomMenu from "./components/bottomMenu/bottomMenu";
+import MainContainer from "./components/mainContainer/mainContainer";
+import ResponsiveAppBar from "./components/navbar/navbar";
+import TopMenu from "./components/topMenu/topMenu";
 import ReportCenter from "./pages/ReportCenter";
-import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App"> 
-     <ReportCenter/>
+      <TopMenu/>
+
+      <MainContainer>
+        <ReportCenter/>
+      </MainContainer>
+
+      <BottomMenu/>
     </div>
   );
 }
