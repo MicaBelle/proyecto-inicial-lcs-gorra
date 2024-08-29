@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gorra.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ceefe068fd87958d3ad2b4234a700ee1e6908558")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bc585eaed979e8fa12c117b9821bc765a348946")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gorra.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gorra.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
