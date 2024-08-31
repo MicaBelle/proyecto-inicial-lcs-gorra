@@ -12,10 +12,6 @@ export default function Home(){
             <p>Una cosa es ser policia, otra es ponerse la gorra.</p>
             <Button variant="outline-light">Reportar robo</Button>
         </Col>
-        <Col>
-            <img src="/assets/poli.png" alt="asd" />
-            <Image src='../assets/poli.png' fluid />
-        </Col>
         </Row>
       </Container>
     )
