@@ -1,21 +1,28 @@
 ﻿using Gorra.apiminimal.Domain.Entities.BaseEntitys;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Gorra.apiminimal.Domain.Entities
 {
     public class Denuncia : BaseEntity
     {
-        public Denuncia(string theftDescription, float thefPositionLat, float thefPositionLon)
+        public Denuncia(Guid idCitizen, string denunciaDescription, float denunciaPositionLat, float denunciaPositionLon, string location, DateTime date, DateTime modDate)
         {
-            TheftDescription = theftDescription;
-            ThefPositionLat = thefPositionLat;
-            ThefPositionLon = thefPositionLon;
+            IdCitizen = idCitizen;
+            Location = location;
+            CreateDate = date;
+            ModificationDate = modDate;
+            DenunciaDescription = denunciaDescription;
+            DenunciaPositionLat = denunciaPositionLat;
+            DenunciaPositionLon = denunciaPositionLon;
         }
 
-        public Guid IdTheft { get; set; }
+        public Guid IdDenuncia { get; set; }
 
-        public string TheftDescription { get; set; }
+        public Guid IdCitizen { get; set; }
 
-        public float ThefPositionLat { get; set; }
-        public float ThefPositionLon { get; set; }
+        public string DenunciaDescription { get; set; }
+
+        public float DenunciaPositionLat { get; set; }
+        public float DenunciaPositionLon { get; set; }
     }
 }

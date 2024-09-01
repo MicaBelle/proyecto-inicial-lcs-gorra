@@ -19,6 +19,7 @@
   <ItemGroup>
     <Folder Include="Application\UseCases\CitizenUseCases\CreateCitizen\" />
     <Folder Include="Application\UseCases\CitizenUseCases\DeleteCitizen\" />
+    <Folder Include="Application\UseCases\CitizenUseCases\LogInCitizen\" />
     <Folder Include="Application\UseCases\CitizenUseCases\UpdateCitizen\" />
     <Folder Include="Application\UseCases\DenunciaUseCases\CreateDenuncia\" />
     <Folder Include="Application\UseCases\DenunciaUseCases\DeleteDenuncia\" />
