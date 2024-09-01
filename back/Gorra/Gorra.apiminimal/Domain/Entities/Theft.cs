@@ -5,24 +5,22 @@ namespace Gorra.apiminimal.Domain.Entities
 {
     public class Denuncia : BaseEntity
     {
-        public Denuncia(Guid idCitizen, string denunciaDescription, float denunciaPositionLat, float denunciaPositionLon, string location, DateTime date, DateTime modDate)
+        public Denuncia(int idCitizen, string denunciaDescription,  (float, float) coordenadas, string location, DateTime date, DateTime modDate)
         {
             IdCitizen = idCitizen;
             Location = location;
             CreateDate = date;
             ModificationDate = modDate;
             DenunciaDescription = denunciaDescription;
-            DenunciaPositionLat = denunciaPositionLat;
-            DenunciaPositionLon = denunciaPositionLon;
+            Coordenadas = coordenadas;
         }
 
-        public Guid IdDenuncia { get; set; }
+        public int IdDenuncia { get; set; }
 
-        public Guid IdCitizen { get; set; }
+        public int IdCitizen { get; set; }
 
         public string DenunciaDescription { get; set; }
 
-        public float DenunciaPositionLat { get; set; }
-        public float DenunciaPositionLon { get; set; }
+        public (float,float) Coordenadas { get; set; }
     }
 }

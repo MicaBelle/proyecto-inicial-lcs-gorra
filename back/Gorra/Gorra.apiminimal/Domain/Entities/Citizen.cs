@@ -17,7 +17,7 @@ namespace Gorra.apiminimal.Domain.Entities
             DeclaredThefts = new HashSet<Denuncia>();
         }
 
-        public Guid CitizenId { get; set; }
+        public int CitizenId { get; set; }
         public string CitizenName { get; set; }
 
         public string CitizenLocation { get; set; }

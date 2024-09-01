@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gorra.apiminimal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e2d597d80ca237c59035ad50fd4e5a2aa49cc80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80887f48f6bbc8f70cd249887073f0efe1d62fc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gorra.apiminimal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gorra.apiminimal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,7 @@
-﻿namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
+﻿using Gorra.apiminimal.Application.DTO;
+using MediatR;
+
+namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
 {
-    public class CreateDenunciaRequest
-    {
-    }
+    public record CreateDenunciaRequest(int idCitizen, string denunciaDescription, (float, float) coordenadas, string location) : IRequest<Result<CreateDenunciaResponse>>;
 }
