@@ -16,16 +16,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Application\UseCases\CitizenUseCases\CreateCitizen\" />
-    <Folder Include="Application\UseCases\CitizenUseCases\DeleteCitizen\" />
-    <Folder Include="Application\UseCases\CitizenUseCases\LogInCitizen\" />
-    <Folder Include="Application\UseCases\CitizenUseCases\UpdateCitizen\" />
-    <Folder Include="Application\UseCases\DenunciaUseCases\CreateDenuncia\" />
-    <Folder Include="Application\UseCases\DenunciaUseCases\DeleteDenuncia\" />
-    <Folder Include="Application\UseCases\DenunciaUseCases\GetDenuncias\" />
-    <Folder Include="Application\UseCases\DenunciaUseCases\GetDenunciaByUserId\" />
-    <Folder Include="Application\UseCases\DenunciaUseCases\UpdateDenuncias\" />
-  </ItemGroup>
-
 </Project>
