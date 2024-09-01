@@ -1,0 +1,6 @@
+@Gorra.apiminimal_HostAddress = http://localhost:5114
+
+GET {{Gorra.apiminimal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
