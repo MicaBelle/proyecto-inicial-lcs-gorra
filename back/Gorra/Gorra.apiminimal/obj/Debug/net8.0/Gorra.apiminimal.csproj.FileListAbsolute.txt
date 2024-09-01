@@ -34,3 +34,5 @@ C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inici
 C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.apiminimal\obj\Debug\net8.0\Gorra.apiminimal.pdb
 C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.apiminimal\obj\Debug\net8.0\Gorra.apiminimal.genruntimeconfig.cache
 C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.apiminimal\obj\Debug\net8.0\ref\Gorra.apiminimal.dll
+C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.apiminimal\bin\Debug\net8.0\libman.json
+C:\Users\Francisco-pc\Desktop\Proyecto Profesional\Proyecto Gorra\proyecto-inicial-lcs-gorra\back\Gorra\Gorra.apiminimal\bin\Debug\net8.0\AutoMapper.dll

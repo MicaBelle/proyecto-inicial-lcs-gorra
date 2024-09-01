@@ -7,16 +7,52 @@
       "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\gorra.apiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\gorra.apiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\usecases\\denunciausecases\\createdenuncia\\createdenunciarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\application\\usecases\\denunciausecases\\createdenuncia\\createdenunciarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\usecases\\denunciausecases\\createdenuncia\\createdenunciaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\application\\usecases\\denunciausecases\\createdenuncia\\createdenunciaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\usecases\\denunciausecases\\createdenuncia\\createdenunciahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\application\\usecases\\denunciausecases\\createdenuncia\\createdenunciahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\domain\\entities\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\domain\\entities\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\domain\\entities\\theft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\domain\\entities\\theft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\usecases\\citizenusecases\\createcitizen\\createcitizenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\application\\usecases\\citizenusecases\\createcitizen\\createcitizenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\usecases\\citizenusecases\\createcitizen\\createcitizenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\application\\usecases\\citizenusecases\\createcitizen\\createcitizenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\usecases\\citizenusecases\\createcitizen\\createcitizenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\application\\usecases\\citizenusecases\\createcitizen\\createcitizenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\dto\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\application\\dto\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\routes\\extensions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\routes\\extensions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\domain\\entities\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\domain\\entities\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\application\\dependencyinyection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\domain\\entities\\baseentitys\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\domain\\entities\\baseentitys\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\domain\\entities\\theft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\domain\\entities\\theft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|c:\\users\\francisco-pc\\desktop\\proyecto profesional\\proyecto gorra\\proyecto-inicial-lcs-gorra\\back\\gorra\\gorra.apiminimal\\gorra.apiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{54260721-111D-41BA-A88A-7AD0F907A472}|Gorra.apiminimal\\Gorra.apiminimal.csproj|solutionrelative:gorra.apiminimal\\gorra.apiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Francisco-pc\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -84,136 +112,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Program.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Program.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Program.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:37:27.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TheftEndPoint.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "CreateDenunciaHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaHandler.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaHandler.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaHandler.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:37:14.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CitizenEndPoint.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:37:09.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Theft.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:29:07.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Citizen.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:29:00.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:28:53.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DependencyInyection.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DependencyInyection.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\DependencyInyection.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DependencyInyection.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Application\\DependencyInyection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:28:02.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DTO\\Result.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\DTO\\Result.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DTO\\Result.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Application\\DTO\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:26:12.33Z",
+              "WhenOpened": "2024-09-01T22:31:02.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ResultExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
-              "RelativeToolTip": "Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwBAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:26:00.599Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Dockerfile",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Dockerfile",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Dockerfile",
+              "RelativeToolTip": "Gorra.apiminimal\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-01T22:30:33.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Gorra.apiminimal",
-              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Gorra.apiminimal.csproj",
-              "RelativeDocumentMoniker": "Gorra.apiminimal\\Gorra.apiminimal.csproj",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Gorra.apiminimal.csproj",
-              "RelativeToolTip": "Gorra.apiminimal\\Gorra.apiminimal.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-01T20:26:58.407Z",
+              "DocumentIndex": 4,
+              "Title": "CreateDenunciaResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaResponse.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaResponse.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaResponse.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:28:19.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateDenunciaRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaRequest.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaRequest.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaRequest.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\UseCases\\DenunciaUseCases\\CreateDenuncia\\CreateDenunciaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:26:39.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateCitizenRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenRequest.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenRequest.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenRequest.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:23:04.829Z",
               "EditorCaption": ""
             },
             {
@@ -222,7 +185,157 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gorra.apiminimal.csproj",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Gorra.apiminimal.csproj",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Gorra.apiminimal.csproj",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Gorra.apiminimal.csproj",
+              "RelativeToolTip": "Gorra.apiminimal\\Gorra.apiminimal.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-01T20:26:58.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Program.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Program.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Program.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:37:27.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateCitizenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenResponse.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenResponse.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenResponse.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:25:35.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "CreateCitizenHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenHandler.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenHandler.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenHandler.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\UseCases\\CitizenUseCases\\CreateCitizen\\CreateCitizenHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:23:48.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Citizen.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Domain\\Entities\\Citizen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:29:00.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Theft.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Domain\\Entities\\Theft.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAACQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:29:07.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TheftEndPoint.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Routes\\EndPoints\\TheftEndPoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:37:14.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CitizenEndPoint.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Routes\\EndPoints\\CitizenEndPoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:37:09.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Domain\\Entities\\BaseEntitys\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:28:53.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DependencyInyection.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DependencyInyection.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\DependencyInyection.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DependencyInyection.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\DependencyInyection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:28:02.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DTO\\Result.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Application\\DTO\\Result.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Application\\DTO\\Result.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Application\\DTO\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:26:12.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResultExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
+              "RelativeDocumentMoniker": "Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
+              "RelativeToolTip": "Gorra.apiminimal\\Routes\\Extensions\\ResultExtensions.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwBAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:26:00.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Container.targets",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
@@ -230,12 +343,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
               "ViewState": "AgIAABkAAAAAAAAAAABBwAgAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-08-28T03:58:59.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T03:58:59.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "gorra.projects.v9.bin",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\.vs\\ProjectEvaluation\\gorra.projects.v9.bin",
               "RelativeDocumentMoniker": ".vs\\ProjectEvaluation\\gorra.projects.v9.bin",
@@ -246,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "gorra.metadata.v9.bin",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\.vs\\ProjectEvaluation\\gorra.metadata.v9.bin",
               "RelativeDocumentMoniker": ".vs\\ProjectEvaluation\\gorra.metadata.v9.bin",
@@ -257,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "gorra.strings.v9.bin",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\.vs\\ProjectEvaluation\\gorra.strings.v9.bin",
               "RelativeDocumentMoniker": ".vs\\ProjectEvaluation\\gorra.strings.v9.bin",
@@ -268,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "ContainerDevelopmentMode.cache",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\Container\\ContainerDevelopmentMode.cache",
               "RelativeDocumentMoniker": "Gorra.api\\obj\\Container\\ContainerDevelopmentMode.cache",
@@ -276,12 +388,11 @@
               "RelativeToolTip": "Gorra.api\\obj\\Container\\ContainerDevelopmentMode.cache",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002368|",
-              "WhenOpened": "2024-08-28T02:31:21.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T02:31:21.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "ContainerId.cache",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\Container\\ContainerId.cache",
               "RelativeDocumentMoniker": "Gorra.api\\obj\\Container\\ContainerId.cache",
@@ -289,12 +400,11 @@
               "RelativeToolTip": "Gorra.api\\obj\\Container\\ContainerId.cache",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002368|",
-              "WhenOpened": "2024-08-28T02:31:21.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T02:31:21.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "ContainerName.cache",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\Container\\ContainerName.cache",
               "RelativeDocumentMoniker": "Gorra.api\\obj\\Container\\ContainerName.cache",
@@ -302,12 +412,11 @@
               "RelativeToolTip": "Gorra.api\\obj\\Container\\ContainerName.cache",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002368|",
-              "WhenOpened": "2024-08-28T02:31:20.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T02:31:20.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "ContainerRunContext.cache",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.api\\obj\\Container\\ContainerRunContext.cache",
               "RelativeDocumentMoniker": "Gorra.api\\obj\\Container\\ContainerRunContext.cache",
@@ -315,12 +424,11 @@
               "RelativeToolTip": "Gorra.api\\obj\\Container\\ContainerRunContext.cache",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002368|",
-              "WhenOpened": "2024-08-28T02:31:19.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T02:31:19.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -328,8 +436,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "ViewState": "AgIAAPQAAAAAAAAAAAAjwAkBAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-08-28T02:30:10.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T02:30:10.996Z"
             }
           ]
         }
