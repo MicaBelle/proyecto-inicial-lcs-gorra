@@ -24,3 +24,8 @@
 /Terraform/.terraform.lock.hcl
 /Terraform/.terraform.tfstate
 /Terraform/.terraform.tfstate.backup
+/back/Gorra/Gorra.apiminimal/obj/Debug/net8.0/Gorra.apiminimal.AssemblyInfo.cs
+/back/Gorra/Gorra.apiminimal/obj/Debug/net8.0/Gorra.apiminimal.AssemblyInfoInputs.cache
+/back/Gorra/Gorra.apiminimal/obj/Debug/net8.0/Gorra.apiminimal.assets.cache
+/back/Gorra/Gorra.apiminimal/obj/Debug/net8.0/Gorra.apiminimal.csproj.AssemblyReference.cache
+/back/Gorra/Gorra.apiminimal/obj/Debug/net8.0/Gorra.apiminimal.GeneratedMSBuildEditorConfig.editorconfig
