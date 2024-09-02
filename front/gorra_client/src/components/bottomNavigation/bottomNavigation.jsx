@@ -5,17 +5,10 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import FormatListNumberedRtlIcon from '@mui/icons-material/FormatListNumberedRtl';
 import AddIcon from '@mui/icons-material/Add';
 import HomeIcon from '@mui/icons-material/Home';
-import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
-
-  const navigate = useNavigate();
-
-  const handleNavigation = (path) => {
-    navigate(path);
-  };
 
   return (
     <Box sx={{ width: "100%" }}>
