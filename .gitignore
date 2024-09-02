@@ -6,3 +6,7 @@
 /back/Gorra/.vs/Gorra/FileContentIndex/1cfabef5-44be-49a9-9ee1-4468c0f99e87.vsidx
 /back/Gorra/.vs/Gorra/FileContentIndex
 */.terraform
+/Terraform/.terraform 
+/Terraform/.terraform.lock.hcl
+/Terraform/.terraform.tfstate
+/Terraform/.terraform.tfstate.backup
