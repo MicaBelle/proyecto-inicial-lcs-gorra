@@ -7,7 +7,9 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
     {
         public async Task<Result<CreateDenunciaResponse>> Handle(CreateDenunciaRequest request, CancellationToken cancellationToken)
         {
-            return null;
+
+
+            return new CreateDenunciaResponse(request.iddenuncia,request.idCitizen,request.denunciaDescription,request.coordenadas,request.location,DateTime.Now,DateTime.Now);
         }
     }
 }

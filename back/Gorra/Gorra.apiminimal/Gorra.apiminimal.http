@@ -1,6 +1,22 @@
 @Gorra.apiminimal_HostAddress = http://localhost:5114
 
-GET {{Gorra.apiminimal_HostAddress}}/weatherforecast/
+GET {{Gorra.apiminimal_HostAddress}}/denuncia/
 Accept: application/json
+###
+POST {{Gorra.apiminimal_HostAddress}}/denuncia/
+Accept: application/json
+###
+PUT {{Gorra.apiminimal_HostAddress}}/denuncia/
+Accept: application/json
+###
+DELETE {{Gorra.apiminimal_HostAddress}}/denuncia/
+Accept: application/json
+###
 
+GET {{Gorra.apiminimal_HostAddress}/citizen/
+Accept: application/json
+###
+
+POST  {{Gorra.apiminimal_HostAddress}/citizen/
+Accept: application/json
 ###

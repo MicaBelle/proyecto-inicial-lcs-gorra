@@ -1,6 +1,8 @@
-﻿namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.LogInCitizen
+﻿using Gorra.apiminimal.Application.DTO;
+using MediatR;
+
+namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.LogInCitizen
 {
-    public class LogInCitizenRequest
-    {
-    }
+    public record LogInCitizenRequest ( string citizenUserName, string citizenPassword) : IRequest<Result>;
+
 }

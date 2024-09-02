@@ -5,9 +5,12 @@ namespace Gorra.apiminimal.Domain.Entities
 {
     public class Denuncia : BaseEntity
     {
+
+        public static int currentId = 0;
         public Denuncia(int idCitizen, string denunciaDescription,  (float, float) coordenadas, string location, DateTime date, DateTime modDate)
         {
             IdCitizen = idCitizen;
+            IdDenuncia = currentId + 1;
             Location = location;
             CreateDate = date;
             ModificationDate = modDate;

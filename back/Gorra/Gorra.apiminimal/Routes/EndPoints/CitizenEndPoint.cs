@@ -4,10 +4,10 @@ namespace Gorra.apiminimal.Routes.EndPoints
 {
     public static class CitizenEndPoint
     {
-        const string PATH = "/Citizen";
+        const string PATH = "/citizen";
     
 
-        public static IEndpointRouteBuilder MapSuperHeroes(this IEndpointRouteBuilder builder)
+        public static IEndpointRouteBuilder MapCitizen(this IEndpointRouteBuilder builder)
         {
             var group = builder.MapGroup(PATH);
 

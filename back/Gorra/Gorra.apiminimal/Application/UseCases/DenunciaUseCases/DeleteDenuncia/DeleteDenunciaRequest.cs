@@ -1,6 +1,7 @@
-﻿namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.DeleteDenuncia
+﻿using Gorra.apiminimal.Application.DTO;
+using MediatR;
+
+namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.DeleteDenuncia
 {
-    public class DeleteDenunciaRequest
-    {
-    }
+    public record DeleteDenunciaRequest(int idDenuncia) : IRequest<Result>;
 }

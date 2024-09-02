@@ -1,4 +1,6 @@
 using Gorra.apiminimal.Application;
+using Gorra.apiminimal.Application.Data;
+using Gorra.apiminimal.Routes.EndPoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplication();
+
+
 
 var app = builder.Build();
 
@@ -20,6 +24,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapCitizen();
+app.MapDenuncia();
 
 
 
