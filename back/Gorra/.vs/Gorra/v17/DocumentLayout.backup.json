@@ -116,24 +116,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Gorra.apiminimal.http",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Gorra.apiminimal.http",
               "RelativeDocumentMoniker": "Gorra.apiminimal\\Gorra.apiminimal.http",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Gorra.apiminimal.http",
-              "RelativeToolTip": "Gorra.apiminimal\\Gorra.apiminimal.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Gorra.apiminimal.http*",
+              "RelativeToolTip": "Gorra.apiminimal\\Gorra.apiminimal.http*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2024-09-01T23:00:53.328Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -180,8 +180,8 @@
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Dockerfile",
               "RelativeDocumentMoniker": "Gorra.apiminimal\\Dockerfile",
-              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Dockerfile*",
-              "RelativeToolTip": "Gorra.apiminimal\\Dockerfile*",
+              "ToolTip": "C:\\Users\\Francisco-pc\\Desktop\\Proyecto Profesional\\Proyecto Gorra\\proyecto-inicial-lcs-gorra\\back\\Gorra\\Gorra.apiminimal\\Dockerfile",
+              "RelativeToolTip": "Gorra.apiminimal\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-09-01T22:30:33.4Z",
