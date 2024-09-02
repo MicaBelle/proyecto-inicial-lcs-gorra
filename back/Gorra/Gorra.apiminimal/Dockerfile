@@ -27,4 +27,4 @@ RUN dotnet publish "./Gorra.apiminimal.csproj" -c $BUILD_CONFIGURATION -o /app/p
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Program"]
+ENTRYPOINT ["dotnet", "Gorra.apiminimal.dll"]

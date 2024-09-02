@@ -25,6 +25,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.MapCitizen();
+app.MapGet("/", () => "Hello, World!");
+
 app.MapDenuncia();
 
 
