@@ -157,5 +157,3 @@ resource "aws_eip_association" "gorra_eip_assoc" {
   instance_id   = aws_instance.gorra_backend.id
   allocation_id = "eipalloc-0d7fea5edaba356ab"
 }
-
-#CHEQUEAR PUERTO 8080 SI NO ES NECESARIO
