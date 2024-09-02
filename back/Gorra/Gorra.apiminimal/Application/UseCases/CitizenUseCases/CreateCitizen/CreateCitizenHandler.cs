@@ -13,7 +13,7 @@ namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
         {
             CreateCitizenResponse citizen = new(request.citizenId,request.citizenName,request.password,DateTime.Now,DateTime.Now);
 
-            Citizen newCitizen = new(request.citizenId,request.citizenName, request.password, DateTime.Now, DateTime.Now);
+            Ciudadano newCitizen = new(request.citizenId,request.citizenName, request.password, DateTime.Now, DateTime.Now);
 
             if (MockData.CitizenList.ContainsKey(request.citizenId))
             {

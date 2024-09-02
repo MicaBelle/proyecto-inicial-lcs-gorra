@@ -6,14 +6,14 @@ namespace Gorra.apiminimal.Application.Data
 {
     public static class MockData
     {
-        public static Dictionary<int, Citizen> CitizenList { get; set; }
+        public static Dictionary<int, Ciudadano> CitizenList { get; set; }
 
         public static void GenerateCitizen()
         {
-            CitizenList = new Dictionary<int, Citizen>();
+            CitizenList = new Dictionary<int, Ciudadano>();
 
             // Crear el primer ciudadano con 10 denuncias
-            var citizen1 = new Citizen(1,"Juan Pérez", "password123", DateTime.Now, DateTime.Now)
+            var citizen1 = new Ciudadano(1,"Juan Pérez", "password123", DateTime.Now, DateTime.Now)
             {
                 CitizenId = 1,
                 DeclaredDenuncia = new List<Denuncia>
@@ -32,7 +32,7 @@ namespace Gorra.apiminimal.Application.Data
             };
 
             // Crear el segundo ciudadano con 10 denuncias
-            var citizen2 = new Citizen(2,"María García", "mypassword", DateTime.Now, DateTime.Now)
+            var citizen2 = new Ciudadano(2,"María García", "mypassword", DateTime.Now, DateTime.Now)
             {
                 CitizenId = 2,
                 DeclaredDenuncia = new List<Denuncia>

@@ -1,4 +1,5 @@
-﻿using Gorra.apiminimal.Application.DTO;
+﻿using Gorra.apiminimal.Application.Data;
+using Gorra.apiminimal.Application.DTO;
 using MediatR;
 
 namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.DeleteDenuncia
@@ -7,7 +8,17 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.DeleteDenuncia
     {
         public async Task<Result> Handle(DeleteDenunciaRequest request, CancellationToken cancellationToken)
         {
-            return "Denuncia borrada satisfactoriamente";
+
+            var ciudadano = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCiudadano);
+
+            var denunciaToDelete = ciudadano.Value.DeclaredDenuncia.FirstOrDefault(x => x.IdDenuncia == request.idDenuncia);
+
+            if(denunciaToDelete == null)
+            {
+                return "No existe la denuncia que se quiere borrar";
+            }
+
+            return ciudadano.Value.DeclaredDenuncia.Remove(denunciaToDelete) ? "Denuncia borrada satisfactoriamente": "Denuncia no eliminada";
         }
     }
 }
