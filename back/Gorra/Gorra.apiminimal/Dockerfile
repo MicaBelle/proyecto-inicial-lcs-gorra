@@ -16,7 +16,7 @@ COPY ["./Gorra.apiminimal.csproj", "Gorra.apiminimal/"]
 RUN dotnet restore "./Gorra.apiminimal/Gorra.apiminimal.csproj"
 COPY . .
 WORKDIR "/src/Gorra.apiminimal"
-RUN dotnet build "./src/Gorra.apiminimal.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN publish build "./Gorra.apiminimal.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Esta fase se usa para publicar el proyecto de servicio que se copiará en la fase final.
 FROM build AS publish
