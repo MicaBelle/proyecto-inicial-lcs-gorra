@@ -1,0 +1,22 @@
+.main-container {
+    background-image: url('../../assets/bandera.jfif');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.main-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.096); /* Aquí puedes ajustar la opacidad con el valor final (0.5 en este caso) */
+    z-index: -1; /* Asegúrate de que esta capa esté detrás del contenido */
+}
