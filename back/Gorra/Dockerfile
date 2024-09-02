@@ -13,7 +13,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["./Gorra.apiminimal.csproj", "Gorra.apiminimal/"]
+COPY ["./Gorra.apiminimal/Gorra.apiminimal.csproj", "Gorra.apiminimal/"]
 RUN dotnet restore "./Gorra.apiminimal/Gorra.apiminimal.csproj"
 COPY . .
 WORKDIR "/src/Gorra.apiminimal"

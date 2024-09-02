@@ -22,14 +22,18 @@ jobs:
           dotnet-version: '8.0.x'  # Match the version you're using locally
 
       - name: Log in to Amazon ECR
-        uses: aws-actions/amazon-ecr-login@v1
+        id: login-ecr
+        run: |
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
 
-      - name: Build and Push Backend Docker image gorra
+      - name: Build and tag Docker image
         run: |
-          docker build -t backend-app ./back/Gorra/Gorra.apiminimal
-          docker tag backend-app:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
-          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/backend-repo:latest
+          docker build -t 778425189746.dkr.ecr.us-east-1.amazonaws.com/hola-mundo-repo:latest ./back/Gorra
+   
+      - name: Push Docker image to ECR
+        run: |
+          docker push 778425189746.dkr.ecr.us-east-1.amazonaws.com/hola-mundo-repo:latest
