@@ -77,7 +77,6 @@ export default function MyReports(){
       ];
 
     return(
-        // Dentro de tu componente donde renderizas las tarjetas
         <div>
           <Grid container spacing={2}> {/* spacing controla el espacio entre los elementos */}
             {reports.map(report => (

@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LocationMarker from '../components/locationMarker/LocationMarker';
+import GeoRef from '../services/geoRef';
 
 export default function ReportCenter() {
   const [location, setLocation] = useState(null);
@@ -23,6 +24,11 @@ export default function ReportCenter() {
       setError("Geolocation is not supported by this browser.");
     }
   }, []);
+
+  async function executeGeoref(){
+    const data = await GeoRef.getLocationForCoords(location[0], location[1])
+    console.log(data)
+  }
 
   return (
     <Container fluid className="p-3">
@@ -52,7 +58,7 @@ export default function ReportCenter() {
                 <Form.Group controlId="incidentDetails">
                   <Form.Control type="text" placeholder="Describe el incidente" />
                 </Form.Group>
-                <Button variant="primary" type="submit" block>
+                <Button variant="primary" onClick={executeGeoref} block>
                   Reportar robo
                 </Button>
               </Form>
