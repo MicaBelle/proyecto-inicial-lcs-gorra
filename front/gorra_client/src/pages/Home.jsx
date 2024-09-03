@@ -10,7 +10,7 @@ export default function Home(){
       <Row className="justify-content-center text-center mb-1">
         <Col md={8}>
           <h1 className="display-4 font-weight-bold mb-1">Ayúdanos a cuidarte</h1>
-          <p className="lead text-muted mb-4">Una cosa es ser policía y otra muy distinta es ponerse la gorra.</p>
+          <p className="lead text-muted mb-4">Juntos, podemos prevenir el crimen y proteger a quienes más queremos. ¡Tu reporte cuenta!</p>
         </Col>
       </Row>
       <Row>
