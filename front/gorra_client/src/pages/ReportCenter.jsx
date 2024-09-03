@@ -56,13 +56,14 @@ export default function ReportCenter() {
               <h3>Detalles del acontecimiento</h3>
               <Form>
                 <Form.Group controlId="incidentDetails">
-                  <Form.Control type="text" placeholder="Describe el incidente" />
+                  <Form.Control as="textarea" placeholder="Describe el incidente" />
                 </Form.Group>
-                <Button variant="primary" onClick={executeGeoref} block>
-                  Reportar robo
-                </Button>
+                <Form.Group className='d-flex justify-content-center m-3'>
+                  <Button variant="primary" onClick={executeGeoref} block>
+                    Reportar robo
+                  </Button>
+                </Form.Group>
               </Form>
-              <p className="mt-2">Coordenadas: {location.join(', ')}</p>
             </Col>
           </Row>
         </>
