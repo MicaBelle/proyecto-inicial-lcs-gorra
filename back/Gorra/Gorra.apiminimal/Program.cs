@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 
 
-
+//creacion de app
 var app = builder.Build();
 
 
