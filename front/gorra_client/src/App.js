@@ -6,6 +6,8 @@ import ReportCenter from "./pages/ReportCenter";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import MyReports from "./pages/MyReports";
+import Login from "./pages/Login";
+import Register from "./pages/register";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <TopMenu />
       <MainContainer>
         <Routes>
-          <Route path="/" Component={Home} />
+          <Route path="/home" Component={Home} />
+          <Route path="/register" Component={Register} />
+          <Route path="/" Component={Login} />
           <Route path="/report" Component={ReportCenter} />
           <Route path="/my-reports" Component={MyReports} />
         </Routes>

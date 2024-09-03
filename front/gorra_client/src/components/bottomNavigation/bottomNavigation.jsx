@@ -23,7 +23,7 @@ export default function SimpleBottomNavigation() {
         label="Inicio"
         icon={<HomeIcon />}
         component={Link}
-        to="/"
+        to="/home"
       />
       <BottomNavigationAction
         label="Denunciar robo"
