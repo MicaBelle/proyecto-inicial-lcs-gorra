@@ -7,7 +7,7 @@ namespace Gorra.apiminimal.Domain.Entities
     {
 
         public static int currentId = 0;
-        public Denuncia(int idCitizen, string denunciaDescription,  (float, float) coordenadas, string location, DateTime date, DateTime modDate)
+        public Denuncia(int idCitizen, string denunciaDescription, List<float> coordenadas, string location, DateTime date, DateTime modDate)
         {
             IdCitizen = idCitizen;
             IdDenuncia = currentId + 1;
@@ -24,6 +24,6 @@ namespace Gorra.apiminimal.Domain.Entities
 
         public string DenunciaDescription { get; set; }
 
-        public (float,float) Coordenadas { get; set; }
+        public List<float> Coordenadas { get; set; }
     }
 }

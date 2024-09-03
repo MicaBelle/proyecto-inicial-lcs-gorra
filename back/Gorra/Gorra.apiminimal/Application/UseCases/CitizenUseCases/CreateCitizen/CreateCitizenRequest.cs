@@ -3,5 +3,5 @@ using MediatR;
 
 namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
 {
-    public record CreateCitizenRequest(int citizenId,string citizenName, string password) : IRequest<Result<CreateCitizenResponse>>;
+    public record CreateCitizenRequest(string citizenName, string password) : IRequest<Result<CreateCitizenResponse>>;
 }

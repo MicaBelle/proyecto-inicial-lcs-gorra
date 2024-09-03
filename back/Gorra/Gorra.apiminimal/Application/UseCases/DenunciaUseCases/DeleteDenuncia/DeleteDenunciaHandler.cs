@@ -11,14 +11,14 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.DeleteDenuncia
 
             var ciudadano = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCiudadano);
 
-            var denunciaToDelete = ciudadano.Value.DeclaredDenuncia.FirstOrDefault(x => x.IdDenuncia == request.idDenuncia);
+            var denunciaToDelete = ciudadano.Value.DeclaredDenuncia.FirstOrDefault(x => x.IdDenuncia == request.idDenuncia & x.IdCitizen == request.idCiudadano);
 
             if(denunciaToDelete == null)
             {
                 return "No existe la denuncia que se quiere borrar";
             }
 
-            return ciudadano.Value.DeclaredDenuncia.Remove(denunciaToDelete) ? "Denuncia borrada satisfactoriamente": "Denuncia no eliminada";
+            return ciudadano.Value.DeclaredDenuncia.Remove(denunciaToDelete);
         }
     }
 }

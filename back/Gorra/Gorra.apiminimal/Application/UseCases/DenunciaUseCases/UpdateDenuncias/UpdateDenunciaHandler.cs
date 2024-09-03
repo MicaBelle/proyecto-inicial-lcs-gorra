@@ -28,9 +28,11 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.UpdateDenuncias
                 return "La denuncia especificada no existe";
            }
 
+
+
             denuncia.DenunciaDescription = request.denunciaDescription;
-            denuncia.Coordenadas =  request.coordenadas;
-            denuncia.Location = denuncia.Location;
+            denuncia.Coordenadas = request.coordenadas;
+            denuncia.Location = request.location;
             denuncia.ModificationDate = DateTime.Now;
 
 

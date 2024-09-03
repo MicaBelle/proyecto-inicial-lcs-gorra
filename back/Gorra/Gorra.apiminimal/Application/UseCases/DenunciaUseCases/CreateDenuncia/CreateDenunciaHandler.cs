@@ -11,11 +11,15 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
         {
             var ciudadano = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCitizen);
 
-            Denuncia denuncia = new(request.idCitizen,request.denunciaDescription,request.coordenadas,request.location,DateTime.Now,DateTime.Now);
+            var indiceDenuncias =MockData.CitizenList.Values.SelectMany(x => x.DeclaredDenuncia).Count();
+
+            Denuncia denuncia = new(request.idCitizen, request.denunciaDescription, request.coordenadas,request.location,DateTime.Now,DateTime.Now);
+
+            denuncia.IdDenuncia = indiceDenuncias + 1;
 
             ciudadano.Value.DeclaredDenuncia.Add(denuncia);
 
-            return new CreateDenunciaResponse(request.iddenuncia,request.idCitizen,request.denunciaDescription,request.coordenadas,request.location,DateTime.Now,DateTime.Now);
+            return new CreateDenunciaResponse(denuncia.IdDenuncia,request.idCitizen,request.denunciaDescription, request.coordenadas, request.location,DateTime.Now,DateTime.Now);
         }
     }
 }
