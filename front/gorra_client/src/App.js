@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import MyReports from "./pages/MyReports";
 import Login from "./pages/Login";
 import Register from "./pages/register";
+import EditReport from "./pages/EditReport";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" Component={Login} />
           <Route path="/report" Component={ReportCenter} />
           <Route path="/my-reports" Component={MyReports} />
+          <Route path="/edit-report" Component={EditReport} />
         </Routes>
       </MainContainer>
       <BottomMenu />

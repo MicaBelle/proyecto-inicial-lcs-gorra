@@ -5,11 +5,36 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; // Importa los estilos de Leaflet
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 export default function CardReport({report}) {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
+
+  const deleteReport = () => {
+    Swal.fire({
+        title: "Estas seguro/a que deseas eliminar la denuncia?",
+        showDenyButton: true,
+        confirmButtonColor: "#dd6b55",
+        confirmButtonText: "Eliminar",
+        denyButtonColor: "#aaa",
+        denyButtonText: `Cancelar`
+      }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: "Denuncia eliminada con éxito!",
+                icon: "success",
+                confirmButtonColor: "#0d6efd"
+            });
+        }
+      });
+  };
 
   return (
-    
     <Card sx={{ maxWidth: 345 }}>
       <div style={{ height: '100px', width: '100%' }}>
         <MapContainer
@@ -38,8 +63,8 @@ export default function CardReport({report}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Modificar</Button>
-        <Button size="small">Eliminar</Button>
+        <Button size="small" onClick={() => handleClick("/edit-report")}>Modificar</Button>
+        <Button size="small" onClick={() => deleteReport()}>Eliminar</Button>
       </CardActions>
     </Card>
   );
