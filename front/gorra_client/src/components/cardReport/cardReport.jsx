@@ -35,37 +35,39 @@ export default function CardReport({report}) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <div style={{ height: '100px', width: '100%' }}>
-        <MapContainer
-          center={report.coordenada}
-          zoom={13}
-          scrollWheelZoom={false}
-          style={{ height: '100%', width: '100%' }}
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={report.coordenada}>
-            <Popup>
-              Aquí sucedio el hecho.
-            </Popup>
-          </Marker>
-        </MapContainer>
-      </div>
-      
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Reporte del día {new Date(report.date).toUTCString()} en {report.lugar}.
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            {report.detalle}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" onClick={() => handleClick("/edit-report")}>Modificar</Button>
-        <Button size="small" onClick={() => deleteReport()}>Eliminar</Button>
-      </CardActions>
-    </Card>
+    <div className='d-flex justify-content-center'>
+      <Card sx={{ maxWidth: 345 }}>
+        <div style={{ height: '100px', width: '100%' }}>
+          <MapContainer
+            center={report.coordenada}
+            zoom={13}
+            scrollWheelZoom={false}
+            style={{ height: '100%', width: '100%' }}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={report.coordenada}>
+              <Popup>
+                Aquí sucedio el hecho.
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
+        
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Reporte del día {new Date(report.date).toUTCString()} en {report.lugar}.
+          </Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              {report.detalle}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small" onClick={() => handleClick("/edit-report")}>Modificar</Button>
+          <Button size="small" onClick={() => deleteReport()}>Eliminar</Button>
+        </CardActions>
+      </Card>
+    </div>
   );
 }
