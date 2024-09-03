@@ -153,7 +153,7 @@ useEffect(() => {
         <input type="date" class="form-control" id="fecha" value={fecha} onChange={(event) => handleFecha(event.target.value)}/>
       </div>
       </div>
-      <div id="map" style={{ height: '40vh', width: '100%' }}>
+      <div id="map" style={{ height: '40vh', width: '100%'}}>
       </div>
     </div>
   );
