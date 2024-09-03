@@ -23,6 +23,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+app.UseHsts();
+app.UseCertificateForwarding();
+app.UseHsts();
 app.UseHttpsRedirection();
 
 
