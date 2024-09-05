@@ -5,6 +5,16 @@ import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LocationMarker from '../components/locationMarker/LocationMarker';
 import GeoRef from '../services/geoRef';
+import icon from "leaflet/dist/images/marker-icon.png";
+import L from "leaflet";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
+
+let DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 export default function ReportCenter() {
   const [location, setLocation] = useState(null);
@@ -26,7 +36,7 @@ export default function ReportCenter() {
   }, []);
 
   async function executeGeoref(){
-    const data = await GeoRef.getLocationForCoords(location[0], location[1]);
+    const data = await GeoRef.getUbicacionPorCoords(location[0], location[1]);
     console.log(data);
   }
 

@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet.heat';
 import { executeFetch } from '../../services/fetch';
 import { HttpMethods } from '../../services/HttpMethods';
+import GeoRef from '../../services/geoRef';
 
 
 
@@ -60,7 +61,7 @@ useEffect(() => {
 
   const obtenerLocalidadBuenosAires = async (nombreLocalidad) => {
     try {
-      const response = await executeFetch("https://apis.datos.gob.ar/georef/api/localidades?provincia=6&nombre=" + encodeURIComponent(nombreLocalidad), null, HttpMethods.GET);
+      const response = await GeoRef.getLocalidadesPorNombre(nombreLocalidad)
       setLocalidades(response.localidades)
     } catch (error) {
       console.error('Error al buscar localidades:', error);
