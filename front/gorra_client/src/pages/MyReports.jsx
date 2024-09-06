@@ -2,6 +2,24 @@ import CardReport from "../components/cardReport/cardReport";
 import Grid from '@mui/material/Grid';
 
 export default function MyReports(){
+    //formato en como trae las denuncias.
+    /*let denuncia = {
+      idDenuncia,
+      idCitizen,
+      denunciaDescription,
+      coordenadas,
+      modificationDate,
+      createDate,
+      location
+    }*/
+
+      /*let denuncia = {
+        idDenuncia,
+        coordenadas,
+        denunciaDescription,
+        createDate,
+        location
+      }*/
 
     const reports = [
         {
@@ -78,9 +96,9 @@ export default function MyReports(){
 
     return(
         <div>
-          <Grid container spacing={2}> {/* spacing controla el espacio entre los elementos */}
+          <Grid container spacing={2}>
             {reports.map(report => (
-              <Grid item xs={12} sm={6} md={4} key={report.id}> {/* Ajusta los valores de xs, sm, md según sea necesario */}
+              <Grid item xs={12} sm={6} md={4} key={report.id}>
                 <CardReport report={report} />
               </Grid>
             ))}

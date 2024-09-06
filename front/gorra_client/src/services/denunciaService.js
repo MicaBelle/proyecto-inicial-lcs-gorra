@@ -3,27 +3,27 @@ import { executeFetch } from "./fetchUtility";
 
 let endpoint = 'http://54.227.167.207:8080/denuncia'
 
-// Función para realizar una solicitud POST
+// Función para cargar una denuncia
 export const postDenuncia = async (data) => {
     return await executeFetch(endpoint, data, HttpMethods.POST);
 };
 
-// Función para realizar una solicitud PUT
+// Función para modificar una denuncia
 export const putDenuncia = async (data) => {
     return await executeFetch(endpoint, data, HttpMethods.PUT);
 };
 
-// Función para realizar una solicitud GET
+// Función para obtener denuncias
 export const getDenuncia = async (id) => {
     return await executeFetch(endpoint + '/', null, HttpMethods.GET);
 };
 
-// Función para realizar una solicitud GET por ID
+// Función para tener denuncias por id
 export const getDenunciaByIdCitizenId = async (id) => {
     return await executeFetch(endpoint + `/${id}`, null, HttpMethods.GET);
 };
 
-// Función para realizar una solicitud DELETE
+// Función para eliminar denuncia
 export const deleteDenuncia = async (citizenId, denunciaId) => {
     return await executeFetch(endpoint + `?citizenId=${citizenId}&denunciaId=${denunciaId}`, null, HttpMethods.DELETE);
 };

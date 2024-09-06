@@ -35,12 +35,12 @@ function Register() {
   };
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit} fluid className="p-3 my-1">
+    <Form noValidate validated={validated} onSubmit={handleSubmit} className="p-3 my-1">
 
       <MDBRow>
 
         <MDBCol col='10' md='6'className='d-flex mb-3 justify-content-center'>
-          <img src={gorraLogo} class="img-fluid" alt="Phone image" className="rounded-pill"/>
+          <img src={gorraLogo} className="img-fluid rounded-pill" alt="Phone image" />
         </MDBCol>
 
         <MDBCol col='4' md='6'>
