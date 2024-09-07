@@ -39,7 +39,7 @@ export default function CardReport({report}) {
       <Card sx={{ maxWidth: 345 }}>
         <div style={{ height: '100px', width: '100%' }}>
           <MapContainer
-            center={report.coordenada}
+            center={report.coordenadas}
             zoom={13}
             scrollWheelZoom={false}
             style={{ height: '100%', width: '100%' }}
@@ -47,7 +47,7 @@ export default function CardReport({report}) {
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={report.coordenada}>
+            <Marker position={report.coordenadas}>
               <Popup>
                 Aquí sucedio el hecho.
               </Popup>
@@ -57,10 +57,10 @@ export default function CardReport({report}) {
         
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Reporte del día {new Date(report.date).toUTCString()} en {report.lugar}.
+            Reporte del día {new Date(report.createDate).toUTCString()} en {report.location}.
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              {report.detalle}
+              {report.denunciaDescription}
           </Typography>
         </CardContent>
         <CardActions>

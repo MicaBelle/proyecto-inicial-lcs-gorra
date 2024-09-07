@@ -1,5 +1,5 @@
+import { executeFetch } from "./fetch";
 import { HttpMethods } from "./HttpMethods";
-import { executeFetch } from "./fetchUtility";
 
 let endpoint = 'http://54.227.167.207:8080/denuncia'
 

@@ -1,5 +1,5 @@
+import { executeFetch } from "./fetch";
 import { HttpMethods } from "./HttpMethods";
-import { executeFetch } from "./fetchUtility";
 
 // Función para registrarse
 export const postCitizen = async (data) => {
