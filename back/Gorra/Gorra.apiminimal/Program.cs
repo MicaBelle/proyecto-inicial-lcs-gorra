@@ -12,21 +12,27 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder => 
+    builder
+    .AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod());
+});
+
 //creacion de app
 var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
-/*if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-*/
-app.UseSwagger();
-app.UseSwaggerUI();
 
-
+app.UseCors("AllowAll");
 app.UseHsts();
 app.UseCertificateForwarding();
 app.UseHsts();
