@@ -27,7 +27,7 @@ function Register() {
 
   const handleSubmit = async (event) => {
     const form = event.currentTarget;
-    
+    //SE REGISTRA A PESAR DE TIRAR ERRORES EN EL FORMULARIO
     if (form.checkValidity() === false || password !== confirmPassword) {
       event.preventDefault();
       event.stopPropagation();
@@ -36,8 +36,8 @@ function Register() {
 
       // Crear el objeto con los datos del formulario
       const userData = {
-        citizenUserName: email,
-        citizenPassword: password
+        citizenName: email,
+        password: password
       };
 
       // Hacer la petición para crear el usuario
