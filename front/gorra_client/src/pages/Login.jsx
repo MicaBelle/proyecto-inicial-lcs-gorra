@@ -35,7 +35,6 @@ function Login() {
       ...formData,
       [name]: value
     })
-    console.log(formData)
   };
 
   // Maneja el envío del formulario
@@ -50,9 +49,8 @@ function Login() {
         const response = await postCitizenLogin(formData)
 
         if (response.succeeded) {
-          console.log("LOGEADOO PAAA")
           localStorage.setItem("user", userData)
-          handleClick("/home"); // Redirigir al home en caso de éxito
+          handleClick("/home")
         } else {
           console.error('Error en la autenticación');
         }

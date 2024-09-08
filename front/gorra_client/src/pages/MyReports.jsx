@@ -2,16 +2,17 @@ import { useEffect, useState } from "react";
 import CardReport from "../components/cardReport/cardReport";
 import Grid from '@mui/material/Grid';
 import { getDenunciaByIdCitizenId } from '../services/denunciaService.js'
+import { useAuth } from "../hooks/useAuth.jsx";
         
 export default function MyReports(){
-
+    useAuth()
     const [reports, setReports] = useState([]);
 
     useEffect(() => {
       async function getDenuncias() {
         try {
           const response = await getDenunciaByIdCitizenId(1);
-          setReports(response.data.denuncia || []); // Asegurarse de que no sea undefined
+          setReports(response.data.denuncia || []);
           console.log(response.data.denuncia)
         } catch (error) {
           console.error("Error fetching reports:", error);

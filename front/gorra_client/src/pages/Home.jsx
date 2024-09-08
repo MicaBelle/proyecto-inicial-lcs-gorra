@@ -3,8 +3,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button, Card, Image } from 'react-bootstrap';
 import MapWithHeatmap from '../components/heatMap/MapWithHeatMap';
+import { useAuth } from '../hooks/useAuth';
+
 
 export default function Home(){
+    useAuth()
     return (
       <Container fluid className="py-1">
       <Row className="justify-content-center text-center mb-1">

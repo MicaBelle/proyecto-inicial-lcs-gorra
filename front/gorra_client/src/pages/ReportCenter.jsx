@@ -8,6 +8,7 @@ import GeoRef from '../services/geoRef';
 import icon from "leaflet/dist/images/marker-icon.png";
 import L from "leaflet";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
+import {useAuth} from "../hooks/useAuth"
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -17,6 +18,7 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 export default function ReportCenter() {
+  useAuth()
   const [incidentDetails, setInicidentDetails] = useState('');
   const [currentLocation, setCurrentLocation] = useState(null);
   const [error, setError] = useState(null);
