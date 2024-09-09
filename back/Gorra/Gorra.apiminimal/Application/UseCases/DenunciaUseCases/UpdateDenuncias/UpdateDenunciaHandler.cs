@@ -12,10 +12,7 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.UpdateDenuncias
         {
             var citizen = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCiudadano).Value;
 
-            if (citizen == null)
-            {
-                return "Ciudadano no encontrado";
-            }
+
 
             if (citizen.DeclaredDenuncia.Count == 0 || !citizen.DeclaredDenuncia.Any())
             {
@@ -28,6 +25,20 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.UpdateDenuncias
                 return "La denuncia especificada no existe";
            }
 
+            if (string.IsNullOrEmpty(request.denunciaDescription) || request.denunciaDescription == "String")
+            {
+                return "ingrese una descripcion de los hechos";
+            }
+
+            if (string.IsNullOrEmpty(request.location) || request.location == "String")
+            {
+                return "Ingrese un lugar de los hechos";
+            }
+
+            if (!request.coordenadas.Any() || request.coordenadas.Count < 2)
+            {
+                return "Las coordenadas no fueron enviadas";
+            }
 
 
             denuncia.DenunciaDescription = request.denunciaDescription;
