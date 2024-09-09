@@ -14,7 +14,6 @@ class GeoRef {
     static async isUbicacionEnBsAs(lat, lon){
         const url = `https://apis.datos.gob.ar/georef/api/ubicacion?lat=${lat}&lon=${lon}`;
         const response = await executeFetch(url, { key: 'value' }, HttpMethods.GET);
-        console.log(response)
         return response.ubicacion.provincia.id === "06"
     }
 }

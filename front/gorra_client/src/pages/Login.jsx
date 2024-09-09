@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import {
-  MDBContainer,
   MDBCol,
   MDBRow,
-  MDBBtn,
-  MDBIcon,
-  MDBInput,
-  MDBCheckbox
+  MDBBtn
 } from 'mdb-react-ui-kit';
-import gorraLogo from "../pages/resources/gorra-logo.jpg"
 import newGorraLogo from "../pages/resources/gorra.png"
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
@@ -61,7 +56,7 @@ function Login() {
     }
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit} fluid className="p-3 my-1">
+    <Form noValidate validated={validated} onSubmit={handleSubmit} className="p-3 my-1">
       <MDBRow>
         <MDBCol col='10' md='6'className='d-flex mb-3 justify-content-center'>
           <img src={newGorraLogo} className="img-fluid rounded-pill" alt="Phone image" />
