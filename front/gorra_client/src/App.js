@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import MyReports from "./pages/MyReports";
 import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Register from "./pages/register";
 import EditReport from "./pages/EditReport";
 
 function App() {

@@ -3,49 +3,37 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.heat';
 import GeoRef from '../../services/geoRef';
+import { getDenuncia } from '../../services/denunciaService';
 
 export default function MapWithHeatmap() {
-const data = [
-  [-34.5225, -58.7352, '2024-08-01'], // Centro de San Miguel
-  [-34.5275, -58.7300, '2024-08-02'], // San Miguel - Localidad 1
-  [-34.5200, -58.7400, '2024-08-03'], // San Miguel - Localidad 2
-  [-34.5250, -58.7450, '2024-08-04'], // San Miguel - Localidad 3
-  [-34.5300, -58.7500, '2024-08-05'], // San Miguel - Localidad 4
-  [-34.5150, -58.7350, '2024-08-06'], // San Miguel - Localidad 5
-  [-34.5230, -58.7200, '2024-08-07'], // San Miguel - Localidad 6
-  [-34.5350, -58.7250, '2024-08-08'], // San Miguel - Localidad 7
-  [-34.5125, -58.7450, '2024-08-09'], // San Miguel - Localidad 8
-  [-34.5280, -58.7550, '2024-08-10'] // San Miguel - Localidad 9  
-];
+  const [location, setLocation] = useState(null);
+  const [localidades, setLocalidades] = useState(null);
+  const [localidadBuscada, setLocalidadBuscada] = useState('');
+  const [denunciasMostrar, setDenunciasMostrar] = useState([]);
+  const [fecha, setFecha] = useState('');
 
-const [location, setLocation] = useState(null);
-const [localidades, setLocalidades] = useState(null);
-const [localidadBuscada, setLocalidadBuscada] = useState('');
-const [denunciasMostrar, setDenunciasMostrar] = useState(null);
-const [fecha, setFecha] = useState('');
-
-useEffect(() => {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setLocation([position.coords.latitude, position.coords.longitude]);
-      }
-    );
-  }else{
-      setLocation([-34.6037, -58.3816])
+  const obtenerDenuncias = async () => {
+    let denuncias = await getDenuncia();
+    setDenunciasMostrar(denuncias.data.denuncias)
   }
 
-  if(denunciasMostrar == null){
-    //funcion provisoria para utilizar denuncias aleatorias falsas
-    let denunciasAleatorias = [];
-
-    for (let i = 0; i < 100; i++) {
-      const randomIndex = Math.floor(Math.random() * data.length);
-      denunciasAleatorias.push(data[randomIndex]);
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setLocation([position.coords.latitude, position.coords.longitude]);
+        }
+      );
+    }else{
+        setLocation([-34.6037, -58.3816])
     }
-    setDenunciasMostrar(denunciasAleatorias)
-  }
-}, []);
+  }, []);
+
+  useEffect(() => {
+    if (denunciasMostrar.length === 0) {
+      obtenerDenuncias();
+    }
+  }, [denunciasMostrar]);
 
   const debounce = (func, delay) => {
     let timeoutId;
@@ -97,9 +85,9 @@ useEffect(() => {
 
     let heatData;
     if(fecha != today){
-      heatData = denunciasMostrar && denunciasMostrar.filter(d => d[2] == fecha).map(coord => [coord[0], coord[1], 10]);
+      heatData = denunciasMostrar && denunciasMostrar.filter(d => d.createDate == fecha).map(d => [d.coordenadas[0], d.coordenadas[1], 10]);
     }else{
-      heatData = denunciasMostrar && denunciasMostrar.map(coord => [coord[0], coord[1], 1]);
+      heatData = denunciasMostrar && denunciasMostrar.map(d => [d.coordenadas[0], d.coordenadas[1], 10]);
     }
 
     L.heatLayer(heatData, { radius: 25, blur: 15,
@@ -111,7 +99,7 @@ useEffect(() => {
      }).addTo(map);
 
     return () => map.remove();
-  }, [location, fecha]);
+  }, [location, fecha, denunciasMostrar]);
 
   return (
     <div id="container-map">

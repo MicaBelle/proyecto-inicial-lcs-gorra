@@ -14,7 +14,7 @@ export const putDenuncia = async (data) => {
 };
 
 // Función para obtener denuncias
-export const getDenuncia = async (id) => {
+export const getDenuncia = async () => {
     return await executeFetch(endpoint + '/', null, HttpMethods.GET);
 };
 
