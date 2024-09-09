@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import MyReports from "./pages/MyReports";
 import Login from "./pages/Login";
-import Register from "./pages/register";
+import Register from "./pages/Register";
 import EditReport from "./pages/EditReport";
 
 function App() {
@@ -18,10 +18,10 @@ function App() {
         <Routes>
           <Route path="/home" Component={Home} />
           <Route path="/register" Component={Register} />
-          <Route path="/" Component={Login} />
           <Route path="/report" Component={ReportCenter} />
           <Route path="/my-reports" Component={MyReports} />
           <Route path="/edit-report" Component={EditReport} />
+          <Route path="/" Component={Login} />
         </Routes>
       </MainContainer>
       <BottomMenu />

@@ -2,11 +2,7 @@ import React, { useEffect, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.heat';
-import { executeFetch } from '../../services/fetch';
-import { HttpMethods } from '../../services/HttpMethods';
 import GeoRef from '../../services/geoRef';
-
-
 
 export default function MapWithHeatmap() {
 const data = [
@@ -120,12 +116,12 @@ useEffect(() => {
   return (
     <div id="container-map">
       <div className='mb-1'>
-      <div class="form-group">
+      <div className="form-group">
         <label>Nombre localidad: </label>
-        <input type="text" onChange={(event) => handleLocalidad(event.target.value)} class="form-control" id="nombreLocalidad"/>
+        <input type="text" onChange={(event) => handleLocalidad(event.target.value)} className="form-control" id="nombreLocalidad"/>
       </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Localidad</label>
+      <div className="form-group">
+        <label htmlFor="exampleInputEmail1">Localidad</label>
         {localidades && localidades.length > 0 ? (
           <select 
             className="form-control" 
@@ -149,9 +145,9 @@ useEffect(() => {
           </select>
         )}
       </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Fecha</label>
-        <input type="date" class="form-control" id="fecha" value={fecha} onChange={(event) => handleFecha(event.target.value)}/>
+      <div className="form-group">
+        <label htmlFor="exampleInputPassword1">Fecha</label>
+        <input type="date" className="form-control" id="fecha" value={fecha} onChange={(event) => handleFecha(event.target.value)}/>
       </div>
       </div>
       <div id="map" style={{ height: '40vh', width: '100%'}}>

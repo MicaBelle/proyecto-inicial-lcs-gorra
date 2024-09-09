@@ -7,6 +7,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; // Importa los estilos de Leaflet
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { deleteDenuncia } from '../../services/denunciaService';
 
 export default function CardReport({report}) {
   const navigate = useNavigate();
@@ -23,13 +24,17 @@ export default function CardReport({report}) {
         confirmButtonText: "Eliminar",
         denyButtonColor: "#aaa",
         denyButtonText: `Cancelar`
-      }).then((result) => {
+      }).then(async (result) => {
         if (result.isConfirmed) {
-            Swal.fire({
-                title: "Denuncia eliminada con éxito!",
-                icon: "success",
-                confirmButtonColor: "#0d6efd"
-            });
+            const responseForDelete = await deleteDenuncia(report.idCitizen, report.idDenuncia);
+            if(responseForDelete.succeeded){
+              Swal.fire({
+                  title: "Denuncia eliminada con éxito!",
+                  icon: "success",
+                  confirmButtonColor: "#0d6efd"
+              })
+              navigate("/home")
+            }
         }
       });
   };

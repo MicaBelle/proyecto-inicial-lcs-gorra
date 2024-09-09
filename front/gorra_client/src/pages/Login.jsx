@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import {
-  MDBContainer,
   MDBCol,
   MDBRow,
-  MDBBtn,
-  MDBIcon,
-  MDBInput,
-  MDBCheckbox
+  MDBBtn
 } from 'mdb-react-ui-kit';
-import gorraLogo from "../pages/resources/gorra-logo.jpg"
+import newGorraLogo from "../pages/resources/gorra.png"
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 import { postCitizenLogin } from '../services/citizenService';
@@ -22,8 +18,8 @@ function Login() {
 
   // Estado para guardar los valores del formulario
   const [formData, setFormData] = useState({
-    citizenName: '',
-    password: ''
+    citizenUserName: '',
+    citizenPassword: ''
   });
 
   const [validated, setValidated] = useState(false);
@@ -39,17 +35,17 @@ function Login() {
 
   // Maneja el envío del formulario
   const handleSubmit = async (event) => {
-      // Guardar el formData en formato JSON
+  
       event.preventDefault()
-      const userData = JSON.stringify(formData);
 
       try {
         // Hacer la petición a la API de autenticación
-        console.log(formData)
         const response = await postCitizenLogin(formData)
 
         if (response.succeeded) {
-          localStorage.setItem("user", userData)
+          const id = JSON.stringify(response.data.id)
+
+          localStorage.setItem("user", id)
           handleClick("/home")
         } else {
           console.error('Error en la autenticación');
@@ -60,10 +56,10 @@ function Login() {
     }
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit} fluid className="p-3 my-1">
+    <Form noValidate validated={validated} onSubmit={handleSubmit} className="p-3 my-1">
       <MDBRow>
         <MDBCol col='10' md='6'className='d-flex mb-3 justify-content-center'>
-          <img src={gorraLogo} className="img-fluid rounded-pill" alt="Phone image" />
+          <img src={newGorraLogo} className="img-fluid rounded-pill" alt="Phone image" />
         </MDBCol>
         <MDBCol col='4' md='6'>
           <Form.Label>Email</Form.Label>
@@ -72,8 +68,8 @@ function Login() {
             type="email" // Usar el tipo email para validar correos
             placeholder="Email"
             size='lg'
-            name="citizenName" // Agregar el nombre del input
-            value={formData.citizenName}
+            name="citizenUserName" // Agregar el nombre del input
+            value={formData.citizenUserName}
             onChange={handleChange} // Manejar el cambio
           />
           <Form.Control.Feedback type="invalid">Email inválido</Form.Control.Feedback>
@@ -84,8 +80,8 @@ function Login() {
             type="password"
             placeholder="Contraseña"
             size='lg'
-            name="password" // Agregar el nombre del input
-            value={formData.password}
+            name="citizenPassword" // Agregar el nombre del input
+            value={formData.citizenPassword}
             onChange={handleChange} // Manejar el cambio
           />
           <Form.Control.Feedback type="invalid">Contraseña inválida</Form.Control.Feedback>

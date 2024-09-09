@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import {
-  MDBContainer,
   MDBCol,
   MDBRow,
-  MDBBtn,
-  MDBIcon,
-  MDBInput,
-  MDBCheckbox
+  MDBBtn
 } from 'mdb-react-ui-kit';
 import gorraLogo from "../pages/resources/gorra-logo.jpg";
 import { useNavigate } from 'react-router-dom';

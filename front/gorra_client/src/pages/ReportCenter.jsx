@@ -9,6 +9,7 @@ import icon from "leaflet/dist/images/marker-icon.png";
 import L from "leaflet";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import {useAuth} from "../hooks/useAuth"
+import { postDenuncia } from '../services/denunciaService';
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -45,10 +46,16 @@ export default function ReportCenter() {
     if(ubicacionActual){
       let localidad = await GeoRef.getUbicacionPorCoords(lat, lon)
       let denuncia = {
-        id: localStorage.getItem('user').id,
+        idCitizen: localStorage.getItem('user').id,
         denunciaDescription: incidentDetails,
         coordenadas: currentLocation,
         location: localidad.ubicacion.departamento.nombre
+      }
+      try{
+        const envioDenuncia = await postDenuncia(denuncia)
+        if(envioDenuncia.succeeded) console.log("SE ENVIO LA DENUNCIA")
+      }catch(error){
+        console.log(error)
       }
     }
     //enviar mensaje de error
@@ -81,7 +88,7 @@ export default function ReportCenter() {
                       onChange ={ (e) => setInicidentDetails(e.target.value)}/>
                     </Form.Group>
                     <Form.Group className='d-flex justify-content-center m-3'>
-                      <Button variant="primary" onClick={sendDenuncia} block>
+                      <Button variant="primary" onClick={sendDenuncia}>
                         Reportar robo
                       </Button>
                     </Form.Group>

@@ -34,6 +34,7 @@ function ResponsiveAppBar() {
   };
 
   const handleRedirect = () => {
+    localStorage.removeItem("user")
     navigate('/');
     handleCloseUserMenu();
   };
