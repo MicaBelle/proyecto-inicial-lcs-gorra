@@ -11,6 +11,16 @@ namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
 
         public async Task<Result<CreateCitizenResponse>> Handle(CreateCitizenRequest request, CancellationToken cancellationToken)
         {
+            if (string.IsNullOrEmpty(request.citizenName))
+            {
+                return "Ingrese un nombre de usuario";
+            }
+
+            if (string.IsNullOrEmpty(request.password))
+            {
+                return "Ingrese una contraseña correcta";
+            }
+
             int indice = MockData.CitizenList.Count() + 1;
             Ciudadano newCitizen = new(indice, request.citizenName, request.password, DateTime.Now, DateTime.Now);
 

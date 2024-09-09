@@ -9,6 +9,26 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
     {
         public async Task<Result<CreateDenunciaResponse>> Handle(CreateDenunciaRequest request, CancellationToken cancellationToken)
         {
+            if (request.idCitizen == null)
+            {
+                return "El Id del ciudadano no fue enviado";
+            }
+
+            if (string.IsNullOrEmpty(request.denunciaDescription))
+            {
+                return "ingrese una descripcion de los hechos";
+            }
+
+            if (string.IsNullOrEmpty(request.location))
+            {
+                return "Ingrese un lugar de los hechos";
+            }
+
+            if(!request.coordenadas.Any() || request.coordenadas.Count<2)
+            {
+                return "Las coordenadas no fueron enviadas";
+            }
+
             var ciudadano = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCitizen);
 
             var indiceDenuncias =MockData.CitizenList.Values.SelectMany(x => x.DeclaredDenuncia).Count();
