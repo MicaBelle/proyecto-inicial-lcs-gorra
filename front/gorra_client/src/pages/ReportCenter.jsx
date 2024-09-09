@@ -45,7 +45,7 @@ export default function ReportCenter() {
     if(ubicacionActual){
       let localidad = await GeoRef.getUbicacionPorCoords(lat, lon)
       let denuncia = {
-        id: localStorage.getItem('user').id,
+        idCitizen: localStorage.getItem('user').id,
         denunciaDescription: incidentDetails,
         coordenadas: currentLocation,
         location: localidad.ubicacion.departamento.nombre

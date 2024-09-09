@@ -18,10 +18,10 @@ function App() {
         <Routes>
           <Route path="/home" Component={Home} />
           <Route path="/register" Component={Register} />
-          <Route path="/" Component={Login} />
           <Route path="/report" Component={ReportCenter} />
           <Route path="/my-reports" Component={MyReports} />
           <Route path="/edit-report" Component={EditReport} />
+          <Route path="/" Component={Login} />
         </Routes>
       </MainContainer>
       <BottomMenu />
