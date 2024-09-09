@@ -11,16 +11,27 @@ namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
 
         public async Task<Result<CreateCitizenResponse>> Handle(CreateCitizenRequest request, CancellationToken cancellationToken)
         {
-            CreateCitizenResponse citizen = new(request.citizenId,request.citizenName,request.password,DateTime.Now,DateTime.Now);
+            if (string.IsNullOrEmpty(request.citizenName))
+            {
+                return "Ingrese un nombre de usuario";
+            }
 
-            Citizen newCitizen = new(request.citizenId,request.citizenName, request.password, DateTime.Now, DateTime.Now);
+            if (string.IsNullOrEmpty(request.password))
+            {
+                return "Ingrese una contraseña correcta";
+            }
 
-            if (MockData.CitizenList.ContainsKey(request.citizenId))
+            int indice = MockData.CitizenList.Count() + 1;
+            Ciudadano newCitizen = new(indice, request.citizenName, request.password, DateTime.Now, DateTime.Now);
+
+            if (MockData.CitizenList.ContainsKey(indice))
             {
                 return $"Ciudadano {request.citizenName} ya existe";
             }
-            int indice =  MockData.CitizenList.Count() + 1;
+            
             MockData.CitizenList.Add(indice, newCitizen);
+
+            CreateCitizenResponse citizen = new(newCitizen.CitizenId, request.citizenName, request.password, DateTime.Now, DateTime.Now);
 
             return citizen;
         }

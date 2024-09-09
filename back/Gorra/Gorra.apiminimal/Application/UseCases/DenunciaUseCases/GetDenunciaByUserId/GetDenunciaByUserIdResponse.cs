@@ -1,6 +1,7 @@
-﻿namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.GetDenunciaByUserId
+﻿using Gorra.apiminimal.Domain.Entities;
+
+namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.GetDenunciaByUserId
 {
-    public class GetDenunciaByUserIdResponse
-    {
-    }
+    public record GetDenunciaByUserIdResponse(IEnumerable<Denuncia> denuncia);
+
 }

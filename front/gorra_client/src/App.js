@@ -6,6 +6,9 @@ import ReportCenter from "./pages/ReportCenter";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import MyReports from "./pages/MyReports";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import EditReport from "./pages/EditReport";
 
 function App() {
   return (
@@ -13,9 +16,12 @@ function App() {
       <TopMenu />
       <MainContainer>
         <Routes>
-          <Route path="/" Component={Home} />
+          <Route path="/home" Component={Home} />
+          <Route path="/register" Component={Register} />
           <Route path="/report" Component={ReportCenter} />
           <Route path="/my-reports" Component={MyReports} />
+          <Route path="/edit-report" Component={EditReport} />
+          <Route path="/" Component={Login} />
         </Routes>
       </MainContainer>
       <BottomMenu />

@@ -4,6 +4,6 @@
     bottom: 0;
     width: 100%;
     background-color: grey;
-    z-index: 100;
+    z-index: 1000;
     display: flex;
 }

@@ -1,4 +1,6 @@
-﻿using Gorra.apiminimal.Application.DTO;
+﻿using Gorra.apiminimal.Application.Data;
+using Gorra.apiminimal.Application.DTO;
+using Gorra.apiminimal.Domain.Entities;
 using MediatR;
 
 namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
@@ -7,9 +9,37 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
     {
         public async Task<Result<CreateDenunciaResponse>> Handle(CreateDenunciaRequest request, CancellationToken cancellationToken)
         {
+            if (request.idCitizen == null)
+            {
+                return "El Id del ciudadano no fue enviado";
+            }
 
+            if (string.IsNullOrEmpty(request.denunciaDescription))
+            {
+                return "ingrese una descripcion de los hechos";
+            }
 
-            return new CreateDenunciaResponse(request.iddenuncia,request.idCitizen,request.denunciaDescription,request.coordenadas,request.location,DateTime.Now,DateTime.Now);
+            if (string.IsNullOrEmpty(request.location))
+            {
+                return "Ingrese un lugar de los hechos";
+            }
+
+            if(!request.coordenadas.Any() || request.coordenadas.Count<2)
+            {
+                return "Las coordenadas no fueron enviadas";
+            }
+
+            var ciudadano = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCitizen);
+
+            var indiceDenuncias =MockData.CitizenList.Values.SelectMany(x => x.DeclaredDenuncia).Count();
+
+            Denuncia denuncia = new(request.idCitizen, request.denunciaDescription, request.coordenadas,request.location,DateTime.Now,DateTime.Now);
+
+            denuncia.IdDenuncia = indiceDenuncias + 1;
+
+            ciudadano.Value.DeclaredDenuncia.Add(denuncia);
+
+            return new CreateDenunciaResponse(denuncia.IdDenuncia,request.idCitizen,request.denunciaDescription, request.coordenadas, request.location,DateTime.Now,DateTime.Now);
         }
     }
 }

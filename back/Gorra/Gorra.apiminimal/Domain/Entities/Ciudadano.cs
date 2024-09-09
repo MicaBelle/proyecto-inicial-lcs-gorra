@@ -2,9 +2,9 @@
 
 namespace Gorra.apiminimal.Domain.Entities
 {
-    public class Citizen : BaseEntity
+    public class Ciudadano : BaseEntity
     {
-        public Citizen(int citizenId ,string citizenName,string password,DateTime date, DateTime modDate)
+        public Ciudadano(int citizenId ,string citizenName,string password,DateTime date, DateTime modDate)
         {
             CitizenName = citizenName;
             CreateDate = date;

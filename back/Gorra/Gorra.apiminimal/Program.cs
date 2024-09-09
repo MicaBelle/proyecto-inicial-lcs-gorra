@@ -12,7 +12,16 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder => 
+    builder
+    .AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod());
+});
 
+//creacion de app
 var app = builder.Build();
 
 
@@ -23,10 +32,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("AllowAll");
+app.UseHsts();
+app.UseCertificateForwarding();
+app.UseHsts();
 app.UseHttpsRedirection();
-app.MapCitizen();
-app.MapGet("/", () => "Hello, World!");
 
+
+app.MapCitizen();
 app.MapDenuncia();
 
 

@@ -11,7 +11,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%"}}>
       <BottomNavigation
         showLabels
         value={value}
@@ -23,7 +23,7 @@ export default function SimpleBottomNavigation() {
         label="Inicio"
         icon={<HomeIcon />}
         component={Link}
-        to="/"
+        to="/home"
       />
       <BottomNavigationAction
         label="Denunciar robo"
