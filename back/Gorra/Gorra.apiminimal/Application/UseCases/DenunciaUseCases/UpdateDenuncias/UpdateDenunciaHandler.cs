@@ -30,20 +30,8 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.UpdateDenuncias
                 return "ingrese una descripcion de los hechos";
             }
 
-            if (string.IsNullOrEmpty(request.location) || request.location == "String")
-            {
-                return "Ingrese un lugar de los hechos";
-            }
-
-            if (!request.coordenadas.Any() || request.coordenadas.Count < 2)
-            {
-                return "Las coordenadas no fueron enviadas";
-            }
-
 
             denuncia.DenunciaDescription = request.denunciaDescription;
-            denuncia.Coordenadas = request.coordenadas;
-            denuncia.Location = request.location;
             denuncia.ModificationDate = DateTime.Now;
 
 

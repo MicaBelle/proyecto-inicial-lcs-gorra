@@ -14,11 +14,21 @@ builder.Services.AddApplication();
 
 builder.Services.AddCors(options =>
 {
+
     options.AddPolicy("AllowAll", builder => 
     builder
     .AllowAnyOrigin()
     .AllowAnyHeader()
     .AllowAnyMethod());
+
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+
+
 });
 
 //creacion de app
