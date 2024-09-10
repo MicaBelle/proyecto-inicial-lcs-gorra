@@ -4,10 +4,11 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
-import gorraLogo from "../pages/resources/gorra-logo.jpg";
+import newGorraLogo from "../pages/resources/gorra.png"
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 import { postCitizen } from '../services/citizenService';
+import Swal from 'sweetalert2';
 
 function Register() {
   const navigate = useNavigate();
@@ -40,13 +41,30 @@ function Register() {
         const response = await postCitizen(userData)
 
         if (response.succeeded) {
-          handleClick("/home");
+          Swal.fire({
+            title: "Cuenta generada con éxito!",
+            showDenyButton: false,
+            confirmButtonColor: "#0d6efd",
+            confirmButtonText: "  Ok"
+          }).then(async(result) => {
+            if (result.isConfirmed) {
+              handleClick("/home");
+            }
+          });
         } else {
-          alert("Hubo un problema al crear la cuenta. Inténtalo nuevamente.");
+          Swal.fire({
+            title: "Hubo un problema al crear la cuenta. Por favor, vuelva a intentarlo.",
+            icon: "error",
+            confirmButtonColor: "#0d6efd"
+          })
         }
       } catch (error) {
         console.error("Error:", error);
-        alert("Hubo un problema con la conexión.");
+        Swal.fire({
+          title: "Hubo un problema al crear la cuenta. Por favor, vuelva a intentarlo.",
+          icon: "error",
+          confirmButtonColor: "#0d6efd"
+        })
       }
     }
 
@@ -58,8 +76,8 @@ function Register() {
 
       <MDBRow>
 
-        <MDBCol col='10' md='6' className='d-flex mb-3 justify-content-center'>
-          <img src={gorraLogo} className="img-fluid rounded-pill" alt="Logo" />
+        <MDBCol col='10' md='6'className='d-flex mb-3 justify-content-center'>
+          <img src={newGorraLogo} className="img-fluid rounded-pill" alt="Phone image" />
         </MDBCol>
 
         <MDBCol col='4' md='6'>

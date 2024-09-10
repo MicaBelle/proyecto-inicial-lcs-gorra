@@ -8,6 +8,7 @@ import newGorraLogo from "../pages/resources/gorra.png"
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 import { postCitizenLogin } from '../services/citizenService';
+import Swal from 'sweetalert2';
 
 function Login() {
   const navigate = useNavigate();
@@ -48,10 +49,18 @@ function Login() {
           localStorage.setItem("user", id)
           handleClick("/home")
         } else {
-          console.error('Error en la autenticación');
+          Swal.fire({
+            title: "Email y/o contraseña incorrecta. Vuelva a intentarlo.",
+            icon: "error",
+            confirmButtonColor: "#0d6efd"
+          })
         }
       } catch (error) {
-        console.error('Error en la petición:', error);
+        Swal.fire({
+          title: "Email y/o contraseña incorrecta. Vuelva a intentarlo.",
+          icon: "error",
+          confirmButtonColor: "#0d6efd"
+        })
       }
     }
 

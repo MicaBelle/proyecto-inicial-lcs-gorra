@@ -15,7 +15,7 @@ export default function MyReports() {
                 const response = await getDenunciaByIdCitizenId(id);
                 setReports(response.data.denuncia || []);
             } catch (error) {
-                console.error("Error fetching reports:", error);
+                setReports([]);
             }
         }
         getDenuncias();
