@@ -10,16 +10,28 @@ resource "aws_vpc" "gorra_vpc" {
   }
 }
 
-# Creamos la Public Subnet
-resource "aws_subnet" "gorra_public_subnet" {
+# Creamos la primera Public Subnet en la Availability Zone 1
+resource "aws_subnet" "gorra_public_subnet_1" {
   vpc_id                  = aws_vpc.gorra_vpc.id
   cidr_block              = "10.0.1.0/24"
   availability_zone       = var.ZONE1
   map_public_ip_on_launch = true
   tags = {
-    Name = "gorra-public-subnet"
+    Name = "gorra-public-subnet-1"
   }
 }
+
+# Creamos la segunda Public Subnet en la Availability Zone 2
+resource "aws_subnet" "gorra_public_subnet_2" {
+  vpc_id                  = aws_vpc.gorra_vpc.id
+  cidr_block              = "10.0.2.0/24"
+  availability_zone       = var.ZONE2
+  map_public_ip_on_launch = true
+  tags = {
+    Name = "gorra-public-subnet-2"
+  }
+}
+
 
 # Creamos el Internet Gateway
 resource "aws_internet_gateway" "gorra_igw" {
@@ -43,9 +55,15 @@ resource "aws_route_table" "gorra_route_table" {
   }
 }
 
-# Asociamos la Route Table con la Subnet
-resource "aws_route_table_association" "gorra_route_table_assoc" {
-  subnet_id      = aws_subnet.gorra_public_subnet.id
+# Asociamos la Route Table con la primera Subnet
+resource "aws_route_table_association" "gorra_route_table_assoc_1" {
+  subnet_id      = aws_subnet.gorra_public_subnet_1.id
+  route_table_id = aws_route_table.gorra_route_table.id
+}
+
+# Asociamos la Route Table con la segunda Subnet
+resource "aws_route_table_association" "gorra_route_table_assoc_2" {
+  subnet_id      = aws_subnet.gorra_public_subnet_2.id
   route_table_id = aws_route_table.gorra_route_table.id
 }
 
@@ -105,15 +123,15 @@ resource "aws_security_group" "gorra_sg" {
 
 ##CONFIGURACION DE LA EC2##
 
-resource "aws_instance" "gorra_backend" {
+# Primera EC2 en la primera subnet
+resource "aws_instance" "gorra_backend_1" {
   ami                    = var.AMIS[var.REGION]
   instance_type          = "t2.micro"
   availability_zone      = var.ZONE1
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.gorra_sg.id]
-  subnet_id              = aws_subnet.gorra_public_subnet.id
+  subnet_id              = aws_subnet.gorra_public_subnet_1.id
 
-  # El script de user_data permanece igual
   user_data = <<-EOF
                 #!/bin/bash
                 # Update the package manager and install Docker
@@ -144,16 +162,64 @@ resource "aws_instance" "gorra_backend" {
               EOF
 
   # Referenciando el instance profile existente
-  iam_instance_profile = "ec2-role-ecr-access" # El nombre del rol que creaste manualmente
+  iam_instance_profile = "ec2-role-ecr-access" # El nombre del rol que creamos manualmente
 
   tags = {
-    Name    = "gorra_backend"
+    Name    = "gorra_backend_1"
     Project = "GORRA"
   }
 }
 
+# Segunda EC2 en la segunda subnet
+resource "aws_instance" "gorra_backend_2" {
+  ami                    = var.AMIS[var.REGION]
+  instance_type          = "t2.micro"
+  availability_zone      = var.ZONE2
+  key_name               = var.key_name
+  vpc_security_group_ids = [aws_security_group.gorra_sg.id]
+  subnet_id              = aws_subnet.gorra_public_subnet_2.id
+
+  user_data = <<-EOF
+                #!/bin/bash
+                # Update the package manager and install Docker
+                sudo apt-get update -y
+                sudo apt-get install -y docker.io
+
+                # Start Docker and enable it to start on boot
+                sudo systemctl start docker
+                sudo systemctl enable docker
+
+                # Add the current user to the Docker group
+                sudo usermod -aG docker ubuntu
+
+                # Install the AWS CLI 
+                curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+                sudo apt-get install -y unzip
+                unzip awscliv2.zip
+                sudo ./aws/install
+
+                # Authenticate Docker to AWS ECR
+                aws ecr get-login-password --region ${var.REGION} | docker login --username AWS --password-stdin ${var.AWS_ACCOUNT_ID}.dkr.ecr.${var.REGION}.amazonaws.com
+
+                # Pull the Docker image from ECR
+                docker pull ${var.AWS_ACCOUNT_ID}.dkr.ecr.${var.REGION}.amazonaws.com/hola-mundo-repo:latest
+
+                # Run the Docker container
+                docker run -d -p 8080:8080 ${var.AWS_ACCOUNT_ID}.dkr.ecr.${var.REGION}.amazonaws.com/hola-mundo-repo:latest
+              EOF
+
+  # Referenciando el instance profile existente
+  iam_instance_profile = "ec2-role-ecr-access" # El nombre del rol que creamos manualmente
+
+  tags = {
+    Name    = "gorra_backend_2"
+    Project = "GORRA"
+  }
+}
+
+
 #ASOCIAR LA EC2 CON LA IP ELÁSTICA#
 resource "aws_eip_association" "gorra_eip_assoc" {
-  instance_id   = aws_instance.gorra_backend.id
+  instance_id   = aws_instance.gorra_backend_1.id
   allocation_id = "eipalloc-0d7fea5edaba356ab"
 }
