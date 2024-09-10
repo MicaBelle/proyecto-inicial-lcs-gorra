@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Logout'];
@@ -19,6 +19,8 @@ const settings = ['Logout'];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [autenticado, setAutenticado] = React.useState(localStorage.getItem('user'))
+  const location = useLocation();
 
   const navigate = useNavigate();
 
@@ -38,6 +40,11 @@ function ResponsiveAppBar() {
     navigate('/');
     handleCloseUserMenu();
   };
+
+  React.useEffect(() => {
+    setAutenticado(localStorage.getItem('user'))
+  },[location])
+
 
   return (
     <AppBar position="static">
@@ -126,7 +133,8 @@ function ResponsiveAppBar() {
               </Button>
             ))} */}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          {autenticado != null && (
+            <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -155,6 +163,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+          )}
         </Toolbar>
       </Container>
     </AppBar>
