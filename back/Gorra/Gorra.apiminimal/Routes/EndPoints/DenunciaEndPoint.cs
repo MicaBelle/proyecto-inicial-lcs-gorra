@@ -14,7 +14,7 @@ namespace Gorra.apiminimal.Routes.EndPoints
         const string PATH = "/denuncia";
         public static IEndpointRouteBuilder MapDenuncia(this IEndpointRouteBuilder builder)
         {
-            var group = builder.MapGroup(PATH).RequireCors("AllowAll");
+            var group = builder.MapGroup(PATH);
 
 
             group.MapPost("", async (CreateDenunciaRequest request, IMediator mediator) =>

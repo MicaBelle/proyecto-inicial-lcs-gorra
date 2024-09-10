@@ -18,19 +18,13 @@ builder.Services.AddApplication();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", builder =>
+    options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("https://gorra-seven.vercel.app/")
+        builder.AllowAnyOrigin()
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
 
-    options.AddDefaultPolicy(builder =>
-    {
-        builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
-               .AllowAnyMethod()
-               .AllowAnyHeader();
-    });
 });
 //creacion de app
 var app = builder.Build();
@@ -43,7 +37,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowAll");
+app.UseCors();
 
 app.UseHttpsRedirection();
 app.UseCertificateForwarding();
