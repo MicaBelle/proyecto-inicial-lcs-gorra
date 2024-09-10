@@ -2,6 +2,7 @@
 using Gorra.apiminimal.Application.UseCases.CitizenUseCases.LogInCitizen;
 using Gorra.apiminimal.Routes.Extensions;
 using MediatR;
+using Microsoft.AspNetCore.Cors;
 using System.IO;
 
 namespace Gorra.apiminimal.Routes.EndPoints
@@ -9,7 +10,6 @@ namespace Gorra.apiminimal.Routes.EndPoints
     public static class CitizenEndPoint
     {
         const string PATH = "/citizen";
-    
 
         public static IEndpointRouteBuilder MapCitizen(this IEndpointRouteBuilder builder)
         {

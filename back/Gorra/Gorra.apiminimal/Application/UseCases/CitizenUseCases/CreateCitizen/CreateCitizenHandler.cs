@@ -7,6 +7,7 @@ namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
 {
     public class CreateCitizenHandler : IRequestHandler<CreateCitizenRequest, Result<CreateCitizenResponse>>
     {
+        private readonly IGorraDbContex _context;
 
 
         public async Task<Result<CreateCitizenResponse>> Handle(CreateCitizenRequest request, CancellationToken cancellationToken)

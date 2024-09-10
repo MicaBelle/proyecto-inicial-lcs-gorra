@@ -50,3 +50,5 @@
 /back/Gorra/.vs/ProjectEvaluation/gorra.projects.v9.bin
 /back/Gorra/.vs/ProjectEvaluation/gorra.strings.v9.bin
 /back/Gorra/Gorra.apiminimal/obj/Debug/net8.0/Gorra.apiminimal.csproj.FileListAbsolute.txt
+/back/Gorra/.vs/Gorra/config/applicationhost.config
+/back/Gorra/Gorra.apiminimal/obj/Gorra.apiminimal.csproj.nuget.g.targets

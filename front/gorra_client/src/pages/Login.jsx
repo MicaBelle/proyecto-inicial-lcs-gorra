@@ -87,7 +87,7 @@ function Login() {
           <Form.Control.Feedback type="invalid">Contraseña inválida</Form.Control.Feedback>
 
           <div className="d-flex justify-content-center mb-4">
-            <a href="/register">Todavía no tienes una cuenta? Regístrate</a>
+            <a href='/register'>Todavía no tienes una cuenta? Regístrate</a>
           </div>
 
           <MDBBtn type='submit' className="mb-4 w-100" size="lg">
