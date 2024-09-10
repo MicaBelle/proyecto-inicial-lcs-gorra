@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CustomCorsPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "https://gorra-seven.vercel.app/")
+        policy.WithOrigins("http://localhost:3000/", "https://gorra-seven.vercel.app/")
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
