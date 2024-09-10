@@ -1,7 +1,7 @@
 import { executeFetch } from "./fetch";
 import { HttpMethods } from "./HttpMethods";
 
-let endpoint = 'http://54.227.167.207:8080/denuncia'
+let endpoint = 'https://gorraapp.miproyectodevopsmica.com/denuncia'
 
 // Función para cargar una denuncia
 export const postDenuncia = async (data) => {

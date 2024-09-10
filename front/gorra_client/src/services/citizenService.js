@@ -3,12 +3,12 @@ import { HttpMethods } from "./HttpMethods";
 
 // Función para registrarse
 export const postCitizen = async (data) => {
-    const endpoint = 'http://54.227.167.207:8080/citizen';
+    const endpoint = 'https://gorraapp.miproyectodevopsmica.com/citizen';
     return await executeFetch(endpoint, data, HttpMethods.POST);
 };
 
 // Función para logear
 export const postCitizenLogin = async (data) => {
-    const endpoint = 'http://54.227.167.207:8080/citizen/login';
+    const endpoint = 'https://gorraapp.miproyectodevopsmica.com/citizen/login';
     return await executeFetch(endpoint, data, HttpMethods.POST);
 };

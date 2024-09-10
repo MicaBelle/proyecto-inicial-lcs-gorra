@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css'; // Importa los estilos de Leaflet
+import 'leaflet/dist/leaflet.css'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { deleteDenuncia } from '../../services/denunciaService';
@@ -13,7 +13,7 @@ export default function CardReport({report}) {
   const navigate = useNavigate();
 
   const handleClick = (path) => {
-    navigate(path);
+    navigate(path, { state: { report } });
   };
 
   const deleteReport = () => {
