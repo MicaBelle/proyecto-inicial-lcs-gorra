@@ -53,8 +53,9 @@ export default function EditReport() {
       }).then(async(result) => {
         if (result.isConfirmed) {
             const updateDenuncia = await putDenuncia(
-              {idDenuncia: report.iddenuncia,
-               idCiudadano: report.idCitizen,
+              {
+                idCiudadano: report.idCitizen,
+                idDenuncia: report.idDenuncia,
                denunciaDescription: description
               })
             if(updateDenuncia.succeeded){

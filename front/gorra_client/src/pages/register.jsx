@@ -36,7 +36,6 @@ function Register() {
         password: password
       };
 
-      // Hacer la petición para crear el usuario
       try {
         const response = await postCitizen(userData)
 
@@ -103,7 +102,7 @@ function Register() {
           )}
 
           <div className="d-flex justify-content-center mb-4">
-            <a href="/login">¿Ya tienes una cuenta? Inicia sesión</a>
+            <a href="/">¿Ya tienes una cuenta? Inicia sesión</a>
           </div>
 
           <MDBBtn type='submit' className="mb-4 w-100" size="lg">
