@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
     {
-        builder.WithOrigins("https://gorra.netlify.app")
+        builder.WithOrigins("https://gorra-seven.vercel.app/")
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
