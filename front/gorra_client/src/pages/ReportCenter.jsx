@@ -10,6 +10,7 @@ import L from "leaflet";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import {useAuth} from "../hooks/useAuth"
 import { postDenuncia } from '../services/denunciaService';
+import Swal from 'sweetalert2';
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -46,19 +47,35 @@ export default function ReportCenter() {
     if(ubicacionActual){
       let localidad = await GeoRef.getUbicacionPorCoords(lat, lon)
       let denuncia = {
-        idCitizen: localStorage.getItem('user').id,
+        idCitizen: localStorage.getItem('user'),
         denunciaDescription: incidentDetails,
         coordenadas: currentLocation,
         location: localidad.ubicacion.departamento.nombre
       }
       try{
         const envioDenuncia = await postDenuncia(denuncia)
-        if(envioDenuncia.succeeded) console.log("SE ENVIO LA DENUNCIA")
+        if(envioDenuncia.succeeded){
+          Swal.fire({
+            title: "Denuncia creada con éxito!",
+            icon: "success",
+            confirmButtonColor: "#0d6efd"
+          })
+        }else{
+          Swal.fire({
+            title: "Ha ocurrido un error al generar la denuncia, intentelo nuevamente.",
+            icon: "error",
+            confirmButtonColor: "#0d6efd"
+          })
+        }
       }catch(error){
         console.log(error)
+        Swal.fire({
+          title: "Ha ocurrido un error al generar la denuncia, intentelo nuevamente.",
+          icon: "error",
+          confirmButtonColor: "#0d6efd"
+        })
       }
     }
-    //enviar mensaje de error
   }
 
   return (
