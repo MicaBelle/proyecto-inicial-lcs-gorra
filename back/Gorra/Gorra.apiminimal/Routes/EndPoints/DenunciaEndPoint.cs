@@ -5,6 +5,7 @@ using Gorra.apiminimal.Application.UseCases.DenunciaUseCases.GetDenuncias;
 using Gorra.apiminimal.Application.UseCases.DenunciaUseCases.UpdateDenuncias;
 using Gorra.apiminimal.Routes.Extensions;
 using MediatR;
+using Microsoft.AspNetCore.Cors;
 
 namespace Gorra.apiminimal.Routes.EndPoints
 {
@@ -12,7 +13,7 @@ namespace Gorra.apiminimal.Routes.EndPoints
     {
         const string PATH = "/denuncia";
 
-
+        [EnableCors("AllowAll")]
         public static IEndpointRouteBuilder MapDenuncia(this IEndpointRouteBuilder builder)
         {
             var group = builder.MapGroup(PATH);
