@@ -1,5 +1,6 @@
 using Gorra.apiminimal.Application;
 using Gorra.apiminimal.Application.Data;
+using Gorra.apiminimal.Infrestructure;
 using Gorra.apiminimal.Routes.EndPoints;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddInfraestructure(builder.Configuration);
 builder.Services.AddApplication();
+
 
 
 builder.Services.AddCors(options =>
@@ -39,11 +43,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors();
+app.UseCors("AllowAll");
+
+app.UseHttpsRedirection();
 app.UseHsts();
 app.UseCertificateForwarding();
-app.UseHsts();
-app.UseHttpsRedirection();
 
 
 app.MapCitizen();

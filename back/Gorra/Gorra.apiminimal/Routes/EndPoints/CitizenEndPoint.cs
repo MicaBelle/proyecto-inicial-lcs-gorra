@@ -11,10 +11,9 @@ namespace Gorra.apiminimal.Routes.EndPoints
     {
         const string PATH = "/citizen";
 
-        [EnableCors("AllowAll")]
         public static IEndpointRouteBuilder MapCitizen(this IEndpointRouteBuilder builder)
         {
-            var group = builder.MapGroup(PATH);
+            var group = builder.MapGroup(PATH).RequireCors("AllowAll");
 
             group.MapPost("", async (CreateCitizenRequest request, IMediator mediator) =>
             await mediator.Send(request).ToHttpResult());
