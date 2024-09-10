@@ -14,23 +14,20 @@ builder.Services.AddApplication();
 
 builder.Services.AddCors(options =>
 {
-
-    options.AddPolicy("AllowAll", builder => 
-    builder
-    .AllowAnyOrigin()
-    .AllowAnyHeader()
-    .AllowAnyMethod());
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.WithOrigins("https://gorra.netlify.app")
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
 
     options.AddDefaultPolicy(builder =>
     {
         builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
-        .AllowAnyMethod()
-        .AllowAnyHeader();
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
-
-
 });
-
 //creacion de app
 var app = builder.Build();
 
@@ -42,7 +39,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowAll");
+app.UseCors();
 app.UseHsts();
 app.UseCertificateForwarding();
 app.UseHsts();
@@ -51,8 +48,6 @@ app.UseHttpsRedirection();
 
 app.MapCitizen();
 app.MapDenuncia();
-
-
 
 app.Run();
 
