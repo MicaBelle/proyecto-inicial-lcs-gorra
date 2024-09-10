@@ -10,25 +10,21 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 builder.Services.AddInfraestructure(builder.Configuration);
 builder.Services.AddApplication();
 
-
-
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(builder =>
+    options.AddPolicy("CustomCorsPolicy", policy =>
     {
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
+        policy.WithOrigins("http://localhost:3000", "https://gorra.netlify.app")
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
-
 });
+
 //creacion de app
 var app = builder.Build();
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -37,7 +33,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors();
+app.UseCors("CustomCorsPolicy");
 
 app.UseHttpsRedirection();
 app.UseCertificateForwarding();
@@ -47,4 +43,3 @@ app.MapCitizen();
 app.MapDenuncia();
 
 app.Run();
-
