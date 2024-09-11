@@ -2,16 +2,12 @@
 {
     public class Ciudadano
     {
-        public Ciudadano()
-        {
-            DeclaredDenuncia = new List<Denuncia>();
-        }
-        public Ciudadano(string citizenName,string password,DateTime date, DateTime modDate)
+        public Ciudadano(string citizenName,string citizenPass, DateTime createDate, DateTime modificationDate)
         {
             CitizenName = citizenName;
-            CreateDate = date;
-            ModificationDate = modDate;
-            CitizenPass = password;
+            CreateDate = createDate;
+            ModificationDate = modificationDate;
+            CitizenPass = citizenPass;
             DeclaredDenuncia = new List<Denuncia>();
         }
 
@@ -21,6 +17,6 @@
 
         public DateTime ModificationDate { get; set; }
         public DateTime CreateDate { get; set; }
-        public List<Denuncia> DeclaredDenuncia { get; set; }
+        public ICollection<Denuncia> DeclaredDenuncia { get; set; }
     }
 }

@@ -4,14 +4,13 @@ namespace Gorra.apiminimal.Domain.Entities
 {
     public class Denuncia
     {
-        public Denuncia() { }
         public Denuncia(int idCitizen, string denunciaDescription,
-            List<float> coordenadas, string location, DateTime date, DateTime modDate)
+            string coordenadas, string location, DateTime createDate, DateTime modificationDate)
         {
             IdCitizen = idCitizen;
             Location = location;
-            CreateDate = date;
-            ModificationDate = modDate;
+            CreateDate = createDate;
+            ModificationDate = modificationDate;
             DenunciaDescription = denunciaDescription;
             Coordenadas = coordenadas;
         }
@@ -25,6 +24,8 @@ namespace Gorra.apiminimal.Domain.Entities
         public string? Location { get; set; }
         public string DenunciaDescription { get; set; }
 
-        public List<float> Coordenadas { get; set; }
+        public string Coordenadas { get; set; }
+
+
     }
 }

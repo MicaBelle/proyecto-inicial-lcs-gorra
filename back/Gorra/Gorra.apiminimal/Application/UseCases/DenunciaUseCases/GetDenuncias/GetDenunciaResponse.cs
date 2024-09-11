@@ -2,5 +2,6 @@
 
 namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.GetDenuncias
 {
+
     public record GetDenunciaResponse(IEnumerable <Denuncia> denuncias); 
 }

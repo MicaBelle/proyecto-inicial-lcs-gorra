@@ -17,10 +17,10 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.GetDenunciaByUs
         }
         public async Task<Result<GetDenunciaByUserIdResponse>> Handle(GetDenunciaByUseridRequest request, CancellationToken cancellationToken)
         {
-            var denuncias = await _context.Denuncias.Where(x => x.IdCitizen == request.idCiudadano).ToListAsync();
+            var denuncias = await _context.Denuncias.Where(x => x.IdCitizen == request.idCiudadano).ToListAsync(cancellationToken);
 
 
-            if(!denuncias.Any() && denuncias ==null)
+            if(denuncias.Count() == 0 && denuncias ==null)
             {
                 return "Ciudadano no tiene denuncias";
             }

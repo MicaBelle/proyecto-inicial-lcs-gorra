@@ -26,7 +26,7 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
                 return "Ingrese un lugar de los hechos";
             }
 
-            if(!request.coordenadas.Any() || request.coordenadas.Count<2)
+            if(string.IsNullOrEmpty(request.coordenadas))
             {
                 return "Las coordenadas no fueron enviadas";
             }
