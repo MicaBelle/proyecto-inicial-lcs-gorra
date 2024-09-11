@@ -35,6 +35,10 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.UpdateDenuncias
             denuncia.DenunciaDescription = request.denunciaDescription;
             denuncia.ModificationDate = DateTime.Now;
 
+            _context.Denuncias.Update(denuncia);
+
+            await _context.SaveChangesAsync(cancellationToken);
+
 
             return new UpdateDenunciaResponse(denuncia.IdDenuncia, denuncia.IdCitizen,denuncia.DenunciaDescription, denuncia.Coordenadas, denuncia.Location, denuncia.ModificationDate);
 

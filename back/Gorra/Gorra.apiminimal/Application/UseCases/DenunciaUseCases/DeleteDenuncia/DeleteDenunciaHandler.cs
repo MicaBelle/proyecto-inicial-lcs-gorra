@@ -16,14 +16,6 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.DeleteDenuncia
 
         public async Task<Result> Handle(DeleteDenunciaRequest request, CancellationToken cancellationToken)
         {
-
-            var ciudadano = await _context.Ciudadanos.FirstOrDefaultAsync(x => x.CitizenId == request.idCiudadano);
-
-            if(ciudadano == null)
-            {
-                return "Ciudadano indicado no existe, denuncia no fue eliminada";
-            }
-
             var denunciaToDelete =await _context.Denuncias.FirstOrDefaultAsync(x => x.IdDenuncia == request.idDenuncia && x.IdCitizen == request.idCiudadano);
 
             if(denunciaToDelete == null)
