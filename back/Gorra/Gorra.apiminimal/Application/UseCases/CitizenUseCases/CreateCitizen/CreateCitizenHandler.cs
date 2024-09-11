@@ -2,6 +2,8 @@
 using Gorra.apiminimal.Application.DTO;
 using Gorra.apiminimal.Domain.Entities;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
 {
@@ -9,6 +11,10 @@ namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
     {
         private readonly IGorraDbContex _context;
 
+        public CreateCitizenHandler(IGorraDbContex context) { 
+        
+            _context = context;
+        }
 
         public async Task<Result<CreateCitizenResponse>> Handle(CreateCitizenRequest request, CancellationToken cancellationToken)
         {
@@ -21,16 +27,19 @@ namespace Gorra.apiminimal.Application.UseCases.CitizenUseCases.CreateCitizen
             {
                 return "Ingrese una contraseña correcta";
             }
+            
+            Ciudadano newCitizen = new(request.citizenName, request.password, DateTime.Now, DateTime.Now);
 
-            int indice = MockData.CitizenList.Count() + 1;
-            Ciudadano newCitizen = new(indice, request.citizenName, request.password, DateTime.Now, DateTime.Now);
+            var existCitizen = await _context.Ciudadanos.FirstOrDefaultAsync(x => x.CitizenName == request.citizenName);
 
-            if (MockData.CitizenList.ContainsKey(indice))
+            if (existCitizen != null)
             {
                 return $"Ciudadano {request.citizenName} ya existe";
             }
             
-            MockData.CitizenList.Add(indice, newCitizen);
+            await _context.Ciudadanos.AddAsync(newCitizen);
+
+            await _context.SaveChangesAsync(cancellationToken);
 
             CreateCitizenResponse citizen = new(newCitizen.CitizenId, request.citizenName, request.password, DateTime.Now, DateTime.Now);
 

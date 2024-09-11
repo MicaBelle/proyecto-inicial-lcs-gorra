@@ -2,17 +2,19 @@
 using Gorra.apiminimal.Application.DTO;
 using Gorra.apiminimal.Domain.Entities;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
 {
     public class CreateDenunciaHandler : IRequestHandler<CreateDenunciaRequest, Result<CreateDenunciaResponse>>
     {
+        private readonly IGorraDbContex _context;
+        public CreateDenunciaHandler(IGorraDbContex contex) { 
+
+            _context = contex;
+        }
         public async Task<Result<CreateDenunciaResponse>> Handle(CreateDenunciaRequest request, CancellationToken cancellationToken)
         {
-            if (request.idCitizen == null)
-            {
-                return "El Id del ciudadano no fue enviado";
-            }
 
             if (string.IsNullOrEmpty(request.denunciaDescription))
             {
@@ -29,15 +31,19 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.CreateDenuncia
                 return "Las coordenadas no fueron enviadas";
             }
 
-            var ciudadano = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCitizen);
+            var ciudadano =await _context.Ciudadanos.FirstOrDefaultAsync(x => x.CitizenId == request.idCitizen);
 
-            var indiceDenuncias =MockData.CitizenList.Values.SelectMany(x => x.DeclaredDenuncia).Count();
+            if (ciudadano == null) {
+
+                return "Error en la creacion de la denuncia, ciudadano no encontrado";
+
+            }
 
             Denuncia denuncia = new(request.idCitizen, request.denunciaDescription, request.coordenadas,request.location,DateTime.Now,DateTime.Now);
 
-            denuncia.IdDenuncia = indiceDenuncias + 1;
+            await _context.Denuncias.AddAsync(denuncia);
 
-            ciudadano.Value.DeclaredDenuncia.Add(denuncia);
+            await _context.SaveChangesAsync(cancellationToken);
 
             return new CreateDenunciaResponse(denuncia.IdDenuncia,request.idCitizen,request.denunciaDescription, request.coordenadas, request.location,DateTime.Now,DateTime.Now);
         }

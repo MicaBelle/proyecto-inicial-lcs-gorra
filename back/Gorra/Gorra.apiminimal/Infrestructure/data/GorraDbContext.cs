@@ -22,9 +22,6 @@ namespace Gorra.apiminimal.Infrestructure.data
                 .HasMany(r => r.DeclaredDenuncia)
                 .WithOne()
                 .HasForeignKey(x => x.IdCitizen).OnDelete(DeleteBehavior.Cascade);
-
-
-
         }
 
     }

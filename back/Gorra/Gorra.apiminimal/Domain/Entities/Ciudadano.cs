@@ -6,13 +6,12 @@
         {
             DeclaredDenuncia = new List<Denuncia>();
         }
-        public Ciudadano(int citizenId ,string citizenName,string password,DateTime date, DateTime modDate)
+        public Ciudadano(string citizenName,string password,DateTime date, DateTime modDate)
         {
             CitizenName = citizenName;
             CreateDate = date;
             ModificationDate = modDate;
             CitizenPass = password;
-            CitizenId = citizenId;
             DeclaredDenuncia = new List<Denuncia>();
         }
 

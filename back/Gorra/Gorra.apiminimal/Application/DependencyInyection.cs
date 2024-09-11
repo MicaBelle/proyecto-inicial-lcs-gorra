@@ -9,8 +9,6 @@ namespace Gorra.apiminimal.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
 
-            MockData.GenerateCitizen();
-
             services.AddMediatR(o => o.RegisterServicesFromAssembly(typeof(Result).Assembly));
 
             return services;

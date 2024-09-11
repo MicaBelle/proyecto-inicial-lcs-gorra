@@ -2,27 +2,30 @@
 using Gorra.apiminimal.Application.DTO;
 using Gorra.apiminimal.Domain.Entities;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 
 namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.GetDenunciaByUserId
 {
     public class GetDenunciaByUserIdHandler : IRequestHandler<GetDenunciaByUseridRequest, Result<GetDenunciaByUserIdResponse>>
     {
+        private readonly IGorraDbContex _context;
+
+        public GetDenunciaByUserIdHandler(IGorraDbContex contex)
+        {
+            _context = contex;
+        }
         public async Task<Result<GetDenunciaByUserIdResponse>> Handle(GetDenunciaByUseridRequest request, CancellationToken cancellationToken)
         {
-            var citizen = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCiudadano).Value;
+            var denuncias = await _context.Denuncias.Where(x => x.IdCitizen == request.idCiudadano).ToListAsync();
 
-            if(citizen == null)
-            {
-                return "Ciudadano no encontrado";
-            }
 
-            if(citizen.DeclaredDenuncia.Count == 0 || !citizen.DeclaredDenuncia.Any())
+            if(!denuncias.Any() && denuncias ==null)
             {
                 return "Ciudadano no tiene denuncias";
             }
 
-            return new GetDenunciaByUserIdResponse(citizen.DeclaredDenuncia);
+            return new GetDenunciaByUserIdResponse(denuncias);
 
         }
     }

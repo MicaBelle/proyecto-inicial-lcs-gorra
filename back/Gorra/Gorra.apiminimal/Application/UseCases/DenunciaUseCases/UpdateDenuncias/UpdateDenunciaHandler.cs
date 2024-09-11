@@ -3,22 +3,23 @@ using Gorra.apiminimal.Application.Data;
 using Gorra.apiminimal.Application.DTO;
 using Gorra.apiminimal.Domain.Entities;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.UpdateDenuncias
 {
     public class UpdateDenunciaHandler : IRequestHandler<UpdateDenunciaRequest, Result<UpdateDenunciaResponse>>
     {
+        private readonly IGorraDbContex _context;
+
+        public UpdateDenunciaHandler(IGorraDbContex context)
+        {
+            _context = context;
+        }
+
         public async Task<Result<UpdateDenunciaResponse>> Handle(UpdateDenunciaRequest request, CancellationToken cancellationToken)
         {
-            var citizen = MockData.CitizenList.FirstOrDefault(x => x.Key == request.idCiudadano).Value;
 
-
-
-            if (citizen.DeclaredDenuncia.Count == 0 || !citizen.DeclaredDenuncia.Any())
-            {
-                return "Ciudadano no tiene denuncias";
-            }
-           var denuncia = citizen.DeclaredDenuncia.FirstOrDefault(x => x.IdDenuncia == request.idDenuncia);
+           var denuncia = await _context.Denuncias.FirstOrDefaultAsync(x => x.IdDenuncia == request.idDenuncia && x.IdCitizen == request.idCiudadano);
 
            if (denuncia == null)
            {
