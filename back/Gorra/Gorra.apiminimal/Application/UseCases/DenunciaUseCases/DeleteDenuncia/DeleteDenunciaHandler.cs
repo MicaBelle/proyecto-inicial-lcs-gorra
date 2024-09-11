@@ -19,7 +19,7 @@ namespace Gorra.apiminimal.Application.UseCases.DenunciaUseCases.DeleteDenuncia
 
             var ciudadano = await _context.Ciudadanos.FirstOrDefaultAsync(x => x.CitizenId == request.idCiudadano);
 
-            if(ciudadano != null)
+            if(ciudadano == null)
             {
                 return "Ciudadano indicado no existe, denuncia no fue eliminada";
             }
