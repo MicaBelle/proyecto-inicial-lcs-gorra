@@ -55,7 +55,9 @@ export default function MapWithHeatmap() {
       ];
       
       setLocalidades(todasLasLocalidades)
-      setLocation([todasLasLocalidades[0].centroide.lat, todasLasLocalidades[0].centroide.lon]);
+      if(todasLasLocalidades.length > 0){
+        setLocation([todasLasLocalidades[0].centroide.lat, todasLasLocalidades[0].centroide.lon]);
+      }
     } catch (error) {
       console.error('Error al buscar localidades:', error);
     }
