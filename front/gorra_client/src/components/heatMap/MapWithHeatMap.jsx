@@ -43,16 +43,25 @@ export default function MapWithHeatmap() {
     };
   };
 
-  const obtenerLocalidadBuenosAires = async (nombreLocalidad) => {
+  const obtenerLocalidad = async (nombreLocalidad) => {
     try {
-      const response = await GeoRef.getLocalidadesPorNombre(nombreLocalidad)
-      setLocalidades(response.localidades)
+      const responseBSAS = await GeoRef.getLocalidadesPorNombre(nombreLocalidad)
+      const responseCaba = await GeoRef.getLocalidadesPorNombreCaba(nombreLocalidad)
+
+      // Combina las localidades de ambas respuestas
+      const todasLasLocalidades = [
+        ...(responseBSAS.localidades || []),
+        ...(responseCaba.localidades || []),
+      ];
+      
+      setLocalidades(todasLasLocalidades)
+      setLocation([todasLasLocalidades[0].centroide.lat, todasLasLocalidades[0].centroide.lon]);
     } catch (error) {
       console.error('Error al buscar localidades:', error);
     }
   };
 
-  const debouncedObtenerLocalidad = debounce(obtenerLocalidadBuenosAires, 300);
+  const debouncedObtenerLocalidad = debounce(obtenerLocalidad, 300);
 
   function handleLocalidad(nombreLocalidad) {
     setLocalidadBuscada(nombreLocalidad)
@@ -85,9 +94,9 @@ export default function MapWithHeatmap() {
 
     let heatData;
     if(fecha != today){
-      heatData = denunciasMostrar && denunciasMostrar.filter(d => d.createDate == fecha).map(d => [d.coordenadas[0], d.coordenadas[1], 10]);
+      heatData = denunciasMostrar && denunciasMostrar.filter(d => d.createDate == fecha).map(d => [d.coordenadas.split(",")[0], d.coordenadas.split(",")[1], 10]);
     }else{
-      heatData = denunciasMostrar && denunciasMostrar.map(d => [d.coordenadas[0], d.coordenadas[1], 10]);
+      heatData = denunciasMostrar && denunciasMostrar.map(d => [d.coordenadas.split(",")[0], d.coordenadas.split(",")[1], 10]);
     }
 
     L.heatLayer(heatData, { radius: 25, blur: 15,

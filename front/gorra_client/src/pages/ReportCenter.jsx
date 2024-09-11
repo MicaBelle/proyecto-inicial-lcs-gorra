@@ -46,10 +46,11 @@ export default function ReportCenter() {
     const ubicacionActual = await GeoRef.isUbicacionEnBsAs(lat, lon)
     if(ubicacionActual){
       let localidad = await GeoRef.getUbicacionPorCoords(lat, lon)
+      let coordenadas = currentLocation[0] + "," + currentLocation[1]
       let denuncia = {
         idCitizen: localStorage.getItem('user'),
         denunciaDescription: incidentDetails,
-        coordenadas: currentLocation,
+        coordenadas: coordenadas,
         location: localidad.ubicacion.departamento.nombre
       }
       try{

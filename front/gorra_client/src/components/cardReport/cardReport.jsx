@@ -44,7 +44,7 @@ export default function CardReport({report}) {
       <Card sx={{ maxWidth: 345 }}>
         <div style={{ height: '100px', width: '100%' }}>
           <MapContainer
-            center={report.coordenadas}
+            center={[report.coordenadas.split(",")[0], report.coordenadas.split(",")[1]]}
             zoom={13}
             scrollWheelZoom={false}
             style={{ height: '100%', width: '100%' }}
@@ -52,7 +52,7 @@ export default function CardReport({report}) {
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={report.coordenadas}>
+            <Marker position={[report.coordenadas.split(",")[0], report.coordenadas.split(",")[1]]}>
               <Popup>
                 Aquí sucedio el hecho.
               </Popup>

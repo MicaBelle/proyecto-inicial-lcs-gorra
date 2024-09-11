@@ -11,6 +11,10 @@ class GeoRef {
         return await executeFetch("https://apis.datos.gob.ar/georef/api/localidades?provincia=6&nombre=" + encodeURIComponent(nombreLocalidad), null, HttpMethods.GET);
     }
 
+    static async getLocalidadesPorNombreCaba(nombreLocalidad){
+        return await executeFetch("https://apis.datos.gob.ar/georef/api/localidades?provincia=2&nombre=" + encodeURIComponent(nombreLocalidad), null, HttpMethods.GET);
+    }
+
     static async isUbicacionEnBsAs(lat, lon){
         const url = `https://apis.datos.gob.ar/georef/api/ubicacion?lat=${lat}&lon=${lon}`;
         const response = await executeFetch(url, { key: 'value' }, HttpMethods.GET);
