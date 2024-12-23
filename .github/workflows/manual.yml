@@ -1,0 +1,37 @@
+name: github actions test
+
+#Se triggerea cuando se hace un push de cualquier branch DEV
+on:
+  push:
+    branches:
+      - DEV
+
+#Correr los siguientes jobs
+jobs:
+  #nombre del job
+  get-merged-branch:
+    runs-on: ubuntu-latest
+
+#Clonamos el repo
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+#Obtenemos el nomrbe de la branch mergeada
+    - name: Get merged branch name
+      run: |
+       # Obtener los padres del último commit
+        parents=$(git log -1 --pretty=%P)
+        # Extraer la primera rama asociada al primer padre
+        branch_name=$(git branch -r --contains $(echo $parents | awk '{print $1}') | head -n 1 | awk -F/ '{print $2}')
+        echo "Merged branch: $branch_name"
+        echo "MERGED_BRANCH=$branch_name" >> $GITHUB_ENV
+        
+    - name: Output merged branch name
+      run: |  
+        echo "Nombre de la branch mergeada a DEV: $MERGED_BRANCH"
+      
+
+      
+
+  
